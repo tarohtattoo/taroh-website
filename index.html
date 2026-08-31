@@ -26,6 +26,12 @@
   "@type":"TattooParlor",
   "name":"TAROH TATTOO",
   "description":"愛知県あま市の完全予約制プライベートタトゥースタジオ",
+  "address":{
+    "@type":"PostalAddress",
+    "addressLocality":"あま市",
+    "addressRegion":"愛知県",
+    "addressCountry":"JP"
+  },
   "areaServed":[
     "あま市",
     "大治町",
@@ -35,21 +41,24 @@
     "名古屋市南区",
     "名古屋市中川区"
   ],
-  "address":{
-    "@type":"PostalAddress",
-    "addressLocality":"あま市",
-    "addressRegion":"愛知県",
-    "addressCountry":"JP"
-  },
   "sameAs":[
-    "https://www.instagram.com/currybobbob?igsi=MWc0ZGJhMXNscjc2cw=="
+    "https://www.instagram.com/ink.by.taroh"
   ]
 }
 </script>
 
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0
+}
+
+html{
+  scroll-behavior:smooth
+}
+
 body{
   background:#eeeae2;
   color:#171717;
@@ -58,22 +67,35 @@ body{
   overflow-x:hidden;
   padding-bottom:68px
 }
-a{text-decoration:none;color:inherit}
-img{display:block;width:100%}
-button{font:inherit}
+
+a{
+  text-decoration:none;
+  color:inherit
+}
+
+img{
+  display:block;
+  width:100%
+}
+
+button{
+  font:inherit
+}
+
 :root{
   --paper:#eeeae2;
   --paper2:#e3ded5;
   --ink:#171717;
   --gray:#706b63;
   --line:#c6c0b7;
-  --metal:#b7b8b3;
   --max:1080px
 }
+
 .wrap{
   width:min(calc(100% - 36px),var(--max));
   margin:auto
 }
+
 .header{
   position:fixed;
   z-index:1000;
@@ -85,21 +107,25 @@ button{font:inherit}
   backdrop-filter:blur(14px);
   border-bottom:1px solid rgba(0,0,0,.12)
 }
+
 .header-inner{
   height:100%;
   display:flex;
   justify-content:space-between;
   align-items:center
 }
+
 .logo{
   font-size:18px;
   font-weight:800;
   letter-spacing:.08em
 }
+
 .language{
   display:flex;
   gap:4px
 }
+
 .lang-btn{
   width:35px;
   height:35px;
@@ -110,10 +136,12 @@ button{font:inherit}
   opacity:.42;
   cursor:pointer
 }
+
 .lang-btn.active{
   opacity:1;
   background:rgba(0,0,0,.06)
 }
+
 .hero{
   min-height:100svh;
   padding:105px 0 55px;
@@ -121,8 +149,13 @@ button{font:inherit}
   align-items:flex-end;
   position:relative;
   overflow:hidden;
+
   background:
-    linear-gradient(120deg,rgba(255,255,255,.66),rgba(238,234,226,.83)),
+    linear-gradient(
+      120deg,
+      rgba(255,255,255,.66),
+      rgba(238,234,226,.83)
+    ),
     repeating-linear-gradient(
       90deg,
       #b9bab6 0,
@@ -131,6 +164,7 @@ button{font:inherit}
       #d8d6d0 7px
     )
 }
+
 .hero:before{
   content:"";
   position:absolute;
@@ -140,27 +174,19 @@ button{font:inherit}
   top:100px;
   transform:rotate(7deg);
   border:1px solid rgba(0,0,0,.18);
-  background:linear-gradient(145deg,rgba(255,255,255,.34),rgba(90,90,90,.09));
+  background:linear-gradient(
+    145deg,
+    rgba(255,255,255,.34),
+    rgba(90,90,90,.09)
+  );
   box-shadow:0 30px 50px rgba(0,0,0,.08)
 }
-.hero:after{
-  content:"";
-  position:absolute;
-  left:7%;
-  top:17%;
-  width:11px;
-  height:11px;
-  border-radius:50%;
-  background:#8c8d89;
-  box-shadow:
-    calc(86vw - 40px) 10px #8c8d89,
-    15px 65vh #8c8d89,
-    calc(85vw - 55px) 64vh #8c8d89
-}
+
 .hero-content{
   position:relative;
   z-index:2
 }
+
 .jp-mark{
   font-family:"Noto Serif JP",serif;
   writing-mode:vertical-rl;
@@ -169,6 +195,7 @@ button{font:inherit}
   color:#716c65;
   margin-bottom:24px
 }
+
 .hero h1{
   font-size:clamp(72px,23vw,190px);
   font-weight:800;
@@ -176,6 +203,7 @@ button{font:inherit}
   letter-spacing:-.08em;
   margin-left:-5px
 }
+
 .hero-sub{
   margin-top:29px;
   font-size:10px;
@@ -183,12 +211,14 @@ button{font:inherit}
   line-height:2;
   color:#57534e
 }
+
 .hero-lead{
   margin-top:22px;
   max-width:550px;
   font-family:"Noto Serif JP",serif;
   font-size:14px
 }
+
 .actions{
   display:grid;
   grid-template-columns:1.15fr 1fr;
@@ -196,6 +226,7 @@ button{font:inherit}
   margin-top:30px;
   max-width:470px
 }
+
 .btn{
   min-height:56px;
   display:flex;
@@ -206,68 +237,86 @@ button{font:inherit}
   font-weight:700;
   letter-spacing:.1em
 }
+
 .btn-dark{
   background:#191919;
   color:#f7f3eb
 }
+
 .btn-light{
   background:rgba(255,255,255,.35)
 }
+
 .metal-tag{
   display:inline-block;
   margin-top:38px;
   padding:14px 18px;
   border:1px solid #979994;
-  background:
-    linear-gradient(110deg,#afb1ad,#d9d9d4,#a4a6a2);
-  box-shadow:inset 0 0 0 1px rgba(255,255,255,.32);
+  background:linear-gradient(
+    110deg,
+    #afb1ad,
+    #d9d9d4,
+    #a4a6a2
+  );
   font-family:monospace;
   font-size:9px;
   letter-spacing:.12em
 }
+
 .section{
   padding:82px 0;
   border-top:1px solid var(--line)
 }
+
 .eyebrow{
   font-size:9px;
   letter-spacing:.22em;
   color:#756f67;
   margin-bottom:13px
 }
+
 h2{
   font-size:clamp(39px,12vw,91px);
   line-height:.9;
   letter-spacing:-.055em;
   margin-bottom:27px
 }
+
 .copy{
   max-width:650px;
   font-size:13px;
   color:#57534d
 }
+
 .studio{
   background:#e5e0d7
 }
+
 .studio-box{
   margin-top:30px;
   padding:26px;
   border:1px solid #aaa49a;
-  background:
-    linear-gradient(135deg,rgba(255,255,255,.55),rgba(170,170,165,.13));
+  background:linear-gradient(
+    135deg,
+    rgba(255,255,255,.55),
+    rgba(170,170,165,.13)
+  );
   box-shadow:0 22px 45px rgba(0,0,0,.05)
 }
+
 .studio-box h3{
   font-family:"Noto Serif JP",serif;
   font-size:23px;
   line-height:1.55;
   margin-bottom:18px
 }
+
 .studio-box p{
   font-size:13px;
   color:#5e5952;
   margin-top:10px
 }
+
 .profile-grid{
   margin-top:31px;
   display:grid;
@@ -275,37 +324,44 @@ h2{
   gap:20px;
   align-items:center
 }
+
 .profile-photo{
   aspect-ratio:1;
   overflow:hidden;
   border:1px solid #a8a198;
   background:#ccc
 }
+
 .profile-photo img{
   height:100%;
   object-fit:cover;
   object-position:62% 50%
 }
+
 .profile-name{
   font-size:27px;
   font-weight:800;
   line-height:1
 }
+
 .profile-role{
   margin-top:8px;
   font-size:9px;
   color:#756f68;
   letter-spacing:.15em
 }
+
 .profile-copy{
   margin-top:12px;
   font-size:12px;
   color:#625d56
 }
+
 .styles{
   border-top:1px solid var(--line);
   margin-top:38px
 }
+
 .style-row{
   padding:17px 0;
   display:flex;
@@ -313,20 +369,25 @@ h2{
   border-bottom:1px solid var(--line);
   gap:15px
 }
+
 .style-row strong{
   font-size:11px
 }
+
 .style-row span{
   font-size:9px;
   color:#817b73
 }
+
 .price{
   background:#f7f3ed
 }
+
 .price-list{
   margin-top:33px;
   border-top:1px solid var(--line)
 }
+
 .price-row{
   padding:20px 0;
   display:flex;
@@ -335,82 +396,91 @@ h2{
   gap:20px;
   border-bottom:1px solid var(--line)
 }
+
 .price-row span{
   font-size:11px;
   color:#68635c
 }
+
 .price-row strong{
   font-size:16px;
   text-align:right
 }
+
 .price-note{
   margin-top:23px;
   font-size:10px;
   color:#807970
 }
+
 .area{
   background:#e5e0d7
 }
+
 .area-tags{
   display:flex;
   flex-wrap:wrap;
   gap:7px;
   margin-top:27px
 }
+
 .area-tags span{
   border:1px solid #aaa49a;
   padding:9px 12px;
   font-size:9px;
   background:rgba(255,255,255,.29)
 }
+
 .map-box{
   margin-top:29px;
   border:1px solid #aaa49a;
-  padding:24px;
-  background:
-    repeating-linear-gradient(
-      135deg,
-      rgba(0,0,0,.022) 0,
-      rgba(0,0,0,.022) 5px,
-      transparent 5px,
-      transparent 10px
-    )
+  padding:24px
 }
+
 .map-box small{
   font-size:8px;
   letter-spacing:.16em;
   color:#787169
 }
+
 .map-box strong{
   display:block;
   font-size:23px;
   margin-top:6px
 }
+
 .map-box p{
   font-size:11px;
   color:#716b64;
   margin-top:6px
 }
+
 .booking{
   background:#1b1b1b;
   color:#f0ece4
 }
+
 .booking .eyebrow{
   color:#969088
 }
+
 .booking .copy{
   color:#bbb5ad
 }
+
 .booking .actions{
-  grid-template-columns:1fr;
+  grid-template-columns:1fr
 }
+
 .booking .btn{
   border-color:#eee9e1
 }
+
 .booking .btn-dark{
   background:#eee9e1;
   color:#181818
 }
+
 .seo-copy{
   margin-top:35px;
   padding-top:26px;
@@ -418,23 +488,27 @@ h2{
   font-size:10px;
   color:#726d66
 }
+
 footer{
   padding:45px 0 105px;
   background:#1b1b1b;
   color:#eeeae3;
   border-top:1px solid #333
 }
+
 .footer-logo{
   font-size:39px;
   font-weight:800;
   letter-spacing:-.05em
 }
+
 .footer-small{
   margin-top:9px;
   font-size:8px;
   letter-spacing:.15em;
   color:#77716b
 }
+
 .fixed-cta{
   position:fixed;
   z-index:999;
@@ -447,6 +521,7 @@ footer{
   background:#f2eee7;
   border-top:1px solid #bbb5ac
 }
+
 .fixed-cta a{
   display:flex;
   align-items:center;
@@ -455,574 +530,796 @@ footer{
   font-weight:700;
   letter-spacing:.08em
 }
+
 .fixed-cta a:last-child{
   background:#181818;
   color:white
 }
+
 @media(min-width:800px){
-  body{padding-bottom:0}
+
+  body{
+    padding-bottom:0
+  }
+
   .profile-grid{
     grid-template-columns:190px 1fr;
     max-width:700px
   }
+
   .actions{
     grid-template-columns:190px 190px
   }
+
   .booking .actions{
     grid-template-columns:220px 220px
   }
-  .fixed-cta{display:none}
+
+  .fixed-cta{
+    display:none
+  }
+
 }
+
 </style>
 </head>
 
 <body>
 
 <header class="header">
-  <div class="wrap header-inner">
 
-    <a href="#top" class="logo">
-      TAROH
-    </a>
+<div class="wrap header-inner">
 
-    <div class="language">
-      <button class="lang-btn active" data-lang="ja" aria-label="日本語">🇯🇵</button>
-      <button class="lang-btn" data-lang="en" aria-label="English">🇬🇧</button>
-      <button class="lang-btn" data-lang="es" aria-label="Español">🇪🇸</button>
-      <button class="lang-btn" data-lang="pt" aria-label="Português">🇧🇷</button>
-    </div>
+<a href="#top" class="logo">
+TAROH
+</a>
 
-  </div>
+<div class="language">
+
+<button class="lang-btn active" data-lang="ja">
+🇯🇵
+</button>
+
+<button class="lang-btn" data-lang="en">
+🇬🇧
+</button>
+
+<button class="lang-btn" data-lang="es">
+🇪🇸
+</button>
+
+<button class="lang-btn" data-lang="pt">
+🇧🇷
+</button>
+
+</div>
+
+</div>
+
 </header>
 
 <main>
 
 <section class="hero" id="top">
 
-  <div class="wrap hero-content">
+<div class="wrap hero-content">
 
-    <div class="jp-mark" data-i18n="jpMark">
-      愛知・あま市　私設彫刻室
-    </div>
+<div class="jp-mark" data-i18n="jpMark">
+愛知・あま市　私設彫刻室
+</div>
 
-    <h1>TAROH</h1>
+<h1>TAROH</h1>
 
-    <p class="hero-sub">
-      PRIVATE TATTOO STUDIO<br>
-      AMA / AICHI / JAPAN
-    </p>
+<p class="hero-sub">
+PRIVATE TATTOO STUDIO<br>
+AMA / AICHI / JAPAN
+</p>
 
-    <p class="hero-lead" data-i18n="heroLead">
-      愛知県あま市の完全予約制プライベートタトゥースタジオ。
-      初めての方も、女性のお客様も、落ち着いてご相談いただける空間です。
-    </p>
+<p class="hero-lead" data-i18n="heroLead">
+愛知県あま市の完全予約制プライベートタトゥースタジオ。
+初めての方も、女性のお客様も、落ち着いてご相談いただける空間です。
+</p>
 
-    <div class="actions">
+<div class="actions">
 
-      <a
-        class="btn btn-dark"
-        href="https://lin.ee/nhTVjUf"
-        target="_blank"
-        rel="noopener"
-        data-i18n="lineCta">
-        LINEで相談・予約
-      </a>
+<a
+class="btn btn-dark"
+href="https://lin.ee/nhTVjUf"
+target="_blank"
+rel="noopener"
+data-i18n="lineCta">
+LINEで相談・予約
+</a>
 
-      <a
-        class="btn btn-light"
-        href="https://www.instagram.com/currybobbob?igsi=MWc0ZGJhMXNscjc2cw=="
-        target="_blank"
-        rel="noopener"
-        data-i18n="instagramCta">
-        INSTAGRAM
-      </a>
+<a
+class="btn btn-light"
+href="https://www.instagram.com/ink.by.taroh?igsi=YTFzazdjaHVvc2ly"
+target="_blank"
+rel="noopener">
+INSTAGRAM
+</a>
 
-    </div>
+</div>
 
-    <div class="metal-tag">
-      CHICANO / AMERICAN TRADITIONAL<br>
-      BLACK & GREY / LETTERING / CUSTOM
-    </div>
+<div class="metal-tag">
+CHICANO / AMERICAN TRADITIONAL<br>
+BLACK & GREY / LETTERING / CUSTOM
+</div>
 
-  </div>
-
+</div>
 </section>
 
 <section class="section studio">
 
-  <div class="wrap">
+<div class="wrap">
 
-    <p class="eyebrow">
-      PRIVATE SPACE
-    </p>
+<p class="eyebrow">
+PRIVATE SPACE
+</p>
 
-    <h2 data-i18n="studioTitle">
-      STUDIO
-    </h2>
+<h2>
+STUDIO
+</h2>
 
-    <div class="studio-box">
+<div class="studio-box">
 
-      <h3 data-i18n="studioHeading">
-        静かな隠れ家のような、
-        完全予約制のプライベート空間。
-      </h3>
+<h3 data-i18n="studioHeading">
+静かな隠れ家のような、
+完全予約制のプライベート空間。
+</h3>
 
-      <p data-i18n="studioText1">
-        周囲を気にせず、デザイン相談から施術まで
-        落ち着いて過ごしていただけるスタジオです。
-      </p>
+<p data-i18n="studioText1">
+周囲を気にせず、デザイン相談から施術まで
+落ち着いて過ごしていただけるスタジオです。
+</p>
 
-      <p data-i18n="studioText2">
-        タトゥーが初めての方、女性のお客様も
-        お気軽にご相談ください。
-      </p>
+<p data-i18n="studioText2">
+タトゥーが初めての方、女性のお客様も
+お気軽にご相談ください。
+</p>
 
-    </div>
+</div>
 
-  </div>
-
+</div>
 </section>
 
 <section class="section">
 
-  <div class="wrap">
+<div class="wrap">
 
-    <p class="eyebrow">
-      ARTIST
-    </p>
+<p class="eyebrow">
+ARTIST
+</p>
 
-    <h2>
-      TAROH
-    </h2>
+<h2>
+TAROH
+</h2>
 
-    <div class="profile-grid">
+<div class="profile-grid">
 
-      <div class="profile-photo">
-        <img
-          src="profile-taroh.webp"
-          alt="TAROH tattoo artist in Aichi Japan"
-          loading="lazy">
-      </div>
+<div class="profile-photo">
 
-      <div>
+<img
+src="profile-taroh.webp"
+alt="TAROH tattoo artist Aichi Japan"
+loading="lazy">
 
-        <div class="profile-name">
-          TAROH
-        </div>
+</div>
 
-        <div class="profile-role">
-          TATTOO ARTIST / AICHI JAPAN
-        </div>
+<div>
 
-        <p
-          class="profile-copy"
-          data-i18n="profileText">
-          愛知県あま市を拠点に、
-          Chicano、American Traditional、
-          Black & Grey、Letteringを中心に制作しています。
-        </p>
+<div class="profile-name">
+TAROH
+</div>
 
-      </div>
+<div class="profile-role">
+TATTOO ARTIST / AICHI JAPAN
+</div>
 
-    </div>
+<p class="profile-copy" data-i18n="profileText">
+愛知県あま市を拠点に、
+Chicano、American Traditional、
+Black & Grey、Letteringを中心に制作しています。
+</p>
 
-    <div class="styles">
+</div>
 
-      <div class="style-row">
-        <strong>CHICANO</strong>
-        <span>MAIN STYLE</span>
-      </div>
+</div>
 
-      <div class="style-row">
-        <strong>AMERICAN TRADITIONAL</strong>
-        <span>MAIN STYLE</span>
-      </div>
+<div class="styles">
 
-      <div class="style-row">
-        <strong>BLACK & GREY</strong>
-        <span>CUSTOM</span>
-      </div>
+<div class="style-row">
+<strong>CHICANO</strong>
+<span>MAIN STYLE</span>
+</div>
 
-      <div class="style-row">
-        <strong>LETTERING</strong>
-        <span>CUSTOM</span>
-      </div>
+<div class="style-row">
+<strong>AMERICAN TRADITIONAL</strong>
+<span>MAIN STYLE</span>
+</div>
 
-    </div>
+<div class="style-row">
+<strong>BLACK & GREY</strong>
+<span>CUSTOM</span>
+</div>
 
-    <div style="margin-top:28px">
+<div class="style-row">
+<strong>LETTERING</strong>
+<span>CUSTOM</span>
+</div>
 
-      <a
-        class="btn btn-light"
-        href="https://www.instagram.com/currybobbob?igsi=MWc0ZGJhMXNscjc2cw=="
-        target="_blank"
-        rel="noopener"
-        data-i18n="viewInstagram">
-        INSTAGRAMで作品を見る
-      </a>
+</div>
 
-    </div>
+<div style="margin-top:28px">
 
-  </div>
+<a
+class="btn btn-light"
+href="https://www.instagram.com/ink.by.taroh?igsi=YTFzazdjaHVvc2ly"
+target="_blank"
+rel="noopener"
+data-i18n="viewInstagram">
+INSTAGRAMで作品を見る
+</a>
 
+</div>
+
+</div>
 </section>
 
 <section class="section price">
 
-  <div class="wrap">
+<div class="wrap">
 
-    <p class="eyebrow">
-      PRICE GUIDE
-    </p>
+<p class="eyebrow">
+PRICE GUIDE
+</p>
 
-    <h2 data-i18n="priceTitle">
-      PRICE
-    </h2>
+<h2>
+PRICE
+</h2>
 
-    <p class="copy" data-i18n="priceLead">
-      サイズごとの料金目安です。
-      デザイン、部位、細かさなどにより料金は変動します。
-    </p>
+<p class="copy" data-i18n="priceLead">
+サイズごとの料金目安です。
+デザイン、部位、細かさなどにより料金は変動します。
+</p>
 
-    <div class="price-list">
+<div class="price-list">
 
-      <div class="price-row">
-        <span data-i18n="coin">ワンポイント / コインサイズ</span>
-        <strong>¥3,500〜</strong>
-      </div>
+<div class="price-row">
+<span data-i18n="coin">
+ワンポイント / コインサイズ
+</span>
+<strong>¥3,500〜</strong>
+</div>
 
-      <div class="price-row">
-        <span data-i18n="card">名刺サイズ</span>
-        <strong>¥15,000〜</strong>
-      </div>
+<div class="price-row">
+<span data-i18n="card">
+名刺サイズ
+</span>
+<strong>¥15,000〜</strong>
+</div>
 
-      <div class="price-row">
-        <span data-i18n="postcard">はがきサイズ</span>
-        <strong>¥30,000〜</strong>
-      </div>
+<div class="price-row">
+<span data-i18n="postcard">
+はがきサイズ
+</span>
+<strong>¥30,000〜</strong>
+</div>
 
-      <div class="price-row">
-        <span data-i18n="a4">A4サイズ</span>
-        <strong>¥50,000〜</strong>
-      </div>
+<div class="price-row">
+<span data-i18n="a4">
+A4サイズ
+</span>
+<strong>¥50,000〜</strong>
+</div>
 
-      <div class="price-row">
-        <span data-i18n="hourly">時間彫り / 1時間</span>
-        <strong>¥10,000〜</strong>
-      </div>
+<div class="price-row">
+<span data-i18n="hourly">
+時間彫り / 1時間
+</span>
+<strong>¥10,000〜</strong>
+</div>
 
-    </div>
+</div>
 
-    <p
-      class="price-note"
-      data-i18n="priceNote">
-      ※上記はあくまで料金の目安です。
-      デザイン・サイズ・部位・施術内容によって料金は異なります。
-      正式なお見積りはLINEまたはInstagramからお問い合わせください。
-    </p>
+<p class="price-note" data-i18n="priceNote">
+※上記はあくまで料金の目安です。
+デザイン・サイズ・部位・施術内容によって料金は異なります。
+正式なお見積りはLINEまたはInstagramからお問い合わせください。
+</p>
 
-  </div>
-
+</div>
 </section>
-
 <section class="section area">
 
-  <div class="wrap">
+<div class="wrap">
 
-    <p class="eyebrow">
-      LOCATION / SERVICE AREA
-    </p>
+<p class="eyebrow">
+LOCATION / SERVICE AREA
+</p>
 
-    <h2>
-      AMA
-    </h2>
+<h2>
+AMA
+</h2>
 
-    <p class="copy" data-i18n="areaText">
-      愛知県あま市を拠点に、名古屋市西部、
-      海部地域からもアクセスしやすい立地です。
-    </p>
+<p class="copy" data-i18n="areaText">
+愛知県あま市を拠点に、
+名古屋市西部・海部地域からもアクセスしやすい立地です。
+</p>
 
-    <div class="area-tags">
-      <span>あま市</span>
-      <span>大治町</span>
-      <span>蟹江町</span>
-      <span>津島市</span>
-      <span>名古屋市港区</span>
-      <span>名古屋市南区</span>
-      <span>名古屋市中川区</span>
-      <span>名古屋近郊</span>
-    </div>
+<div class="area-tags">
 
-    <div class="map-box">
+<span>あま市</span>
+<span>大治町</span>
+<span>蟹江町</span>
+<span>津島市</span>
+<span>名古屋市港区</span>
+<span>名古屋市南区</span>
+<span>名古屋市中川区</span>
+<span>名古屋近郊</span>
 
-      <small>
-        GOOGLE MAPS / BUSINESS PROFILE
-      </small>
+</div>
 
-      <strong>
-        COMING SOON
-      </strong>
+<div class="map-box">
 
-      <p data-i18n="mapText">
-        Googleビジネスプロフィール準備中。
-        詳細なアクセス情報はご予約時にご案内します。
-      </p>
+<small>
+GOOGLE MAPS / BUSINESS PROFILE
+</small>
 
-    </div>
+<strong>
+COMING SOON
+</strong>
 
-  </div>
+<p data-i18n="mapText">
+Googleビジネスプロフィール準備中。
+詳細なアクセス情報はご予約時にご案内します。
+</p>
 
+</div>
+
+</div>
 </section>
+
 
 <section class="section booking" id="booking">
 
-  <div class="wrap">
+<div class="wrap">
 
-    <p class="eyebrow">
-      RESERVATION / CONSULTATION
-    </p>
+<p class="eyebrow">
+RESERVATION / CONSULTATION
+</p>
 
-    <h2 data-i18n="bookingTitle">
-      BOOKING
-    </h2>
+<h2 data-i18n="bookingTitle">
+BOOKING
+</h2>
 
-    <p class="copy" data-i18n="bookingText">
-      デザイン、サイズ、料金、施術時間など、
-      まずはLINEまたはInstagramからお気軽にご相談ください。
-    </p>
+<p class="copy" data-i18n="bookingText">
+デザイン、サイズ、料金、施術時間など、
+まずはLINEまたはInstagramからお気軽にご相談ください。
+</p>
 
-    <div class="actions">
+<div class="actions">
 
-      <a
-        class="btn btn-dark"
-        href="https://lin.ee/nhTVjUf"
-        target="_blank"
-        rel="noopener"
-        data-i18n="lineCta">
-        LINEで相談・予約
-      </a>
+<a
+class="btn btn-dark"
+href="https://lin.ee/nhTVjUf"
+target="_blank"
+rel="noopener"
+data-i18n="lineCta">
+LINEで相談・予約
+</a>
 
-      <a
-        class="btn"
-        href="https://www.instagram.com/currybobbob?igsi=MWc0ZGJhMXNscjc2cw=="
-        target="_blank"
-        rel="noopener">
-        INSTAGRAM
-      </a>
+<a
+class="btn"
+href="https://www.instagram.com/ink.by.taroh?igsi=YTFzazdjaHVvc2ly"
+target="_blank"
+rel="noopener">
+INSTAGRAM
+</a>
 
-    </div>
+</div>
 
-    <p class="seo-copy" data-i18n="seoCopy">
-      TAROH TATTOOは愛知県あま市の完全予約制タトゥースタジオです。
-      あま市、大治町、蟹江町、津島市、名古屋市港区、
-      南区、中川区、名古屋近郊からのご相談にも対応しています。
-    </p>
+<p class="seo-copy" data-i18n="seoCopy">
+TAROH TATTOOは愛知県あま市の
+完全予約制プライベートタトゥースタジオです。
+あま市、大治町、蟹江町、津島市、
+名古屋市港区、南区、中川区、
+名古屋近郊からのご相談にも対応しています。
+</p>
 
-  </div>
-
+</div>
 </section>
 
 </main>
 
+
 <footer>
 
-  <div class="wrap">
+<div class="wrap">
 
-    <div class="footer-logo">
-      TAROH
-    </div>
+<div class="footer-logo">
+TAROH
+</div>
 
-    <div class="footer-small">
-      PRIVATE TATTOO STUDIO<br>
-      AMA / AICHI / JAPAN
-    </div>
-
-  </div>
-
-</footer>
-
-<div class="fixed-cta">
-
-  <a
-    href="https://www.instagram.com/currybobbob?igsi=MWc0ZGJhMXNscjc2cw=="
-    target="_blank"
-    rel="noopener">
-    INSTAGRAM
-  </a>
-
-  <a
-    href="https://lin.ee/nhTVjUf"
-    target="_blank"
-    rel="noopener"
-    data-i18n="fixedLine">
-    LINEで相談・予約
-  </a>
+<div class="footer-small">
+PRIVATE TATTOO STUDIO<br>
+AMA / AICHI / JAPAN
+</div>
 
 </div>
 
+</footer>
+
+
+<div class="fixed-cta">
+
+<a
+href="https://www.instagram.com/ink.by.taroh?igsi=YTFzazdjaHVvc2ly"
+target="_blank"
+rel="noopener">
+INSTAGRAM
+</a>
+
+<a
+href="https://lin.ee/nhTVjUf"
+target="_blank"
+rel="noopener"
+data-i18n="fixedLine">
+LINEで相談・予約
+</a>
+
+</div>
+
+
 <script>
-const translations={
 
-ja:{
-jpMark:"愛知・あま市　私設彫刻室",
-heroLead:"愛知県あま市の完全予約制プライベートタトゥースタジオ。初めての方も、女性のお客様も、落ち着いてご相談いただける空間です。",
-lineCta:"LINEで相談・予約",
-instagramCta:"INSTAGRAM",
-studioTitle:"STUDIO",
-studioHeading:"静かな隠れ家のような、完全予約制のプライベート空間。",
-studioText1:"周囲を気にせず、デザイン相談から施術まで落ち着いて過ごしていただけるスタジオです。",
-studioText2:"タトゥーが初めての方、女性のお客様もお気軽にご相談ください。",
-profileText:"愛知県あま市を拠点に、Chicano、American Traditional、Black & Grey、Letteringを中心に制作しています。",
-viewInstagram:"INSTAGRAMで作品を見る",
-priceTitle:"PRICE",
-priceLead:"サイズごとの料金目安です。デザイン、部位、細かさなどにより料金は変動します。",
-coin:"ワンポイント / コインサイズ",
-card:"名刺サイズ",
-postcard:"はがきサイズ",
-a4:"A4サイズ",
-hourly:"時間彫り / 1時間",
-priceNote:"※上記はあくまで料金の目安です。デザイン・サイズ・部位・施術内容によって料金は異なります。正式なお見積りはLINEまたはInstagramからお問い合わせください。",
-areaText:"愛知県あま市を拠点に、名古屋市西部、海部地域からもアクセスしやすい立地です。",
-mapText:"Googleビジネスプロフィール準備中。詳細なアクセス情報はご予約時にご案内します。",
-bookingTitle:"BOOKING",
-bookingText:"デザイン、サイズ、料金、施術時間など、まずはLINEまたはInstagramからお気軽にご相談ください。",
-seoCopy:"TAROH TATTOOは愛知県あま市の完全予約制タトゥースタジオです。あま市、大治町、蟹江町、津島市、名古屋市港区、南区、中川区、名古屋近郊からのご相談にも対応しています。",
-fixedLine:"LINEで相談・予約"
+const translations = {
+
+ja: {
+
+jpMark:
+"愛知・あま市　私設彫刻室",
+
+heroLead:
+"愛知県あま市の完全予約制プライベートタトゥースタジオ。初めての方も、女性のお客様も、落ち着いてご相談いただける空間です。",
+
+lineCta:
+"LINEで相談・予約",
+
+studioHeading:
+"静かな隠れ家のような、完全予約制のプライベート空間。",
+
+studioText1:
+"周囲を気にせず、デザイン相談から施術まで落ち着いて過ごしていただけるスタジオです。",
+
+studioText2:
+"タトゥーが初めての方、女性のお客様もお気軽にご相談ください。",
+
+profileText:
+"愛知県あま市を拠点に、Chicano、American Traditional、Black & Grey、Letteringを中心に制作しています。",
+
+viewInstagram:
+"INSTAGRAMで作品を見る",
+
+priceLead:
+"サイズごとの料金目安です。デザイン、部位、細かさなどにより料金は変動します。",
+
+coin:
+"ワンポイント / コインサイズ",
+
+card:
+"名刺サイズ",
+
+postcard:
+"はがきサイズ",
+
+a4:
+"A4サイズ",
+
+hourly:
+"時間彫り / 1時間",
+
+priceNote:
+"※上記はあくまで料金の目安です。デザイン・サイズ・部位・施術内容によって料金は異なります。正式なお見積りはLINEまたはInstagramからお問い合わせください。",
+
+areaText:
+"愛知県あま市を拠点に、名古屋市西部・海部地域からもアクセスしやすい立地です。",
+
+mapText:
+"Googleビジネスプロフィール準備中。詳細なアクセス情報はご予約時にご案内します。",
+
+bookingTitle:
+"BOOKING",
+
+bookingText:
+"デザイン、サイズ、料金、施術時間など、まずはLINEまたはInstagramからお気軽にご相談ください。",
+
+seoCopy:
+"TAROH TATTOOは愛知県あま市の完全予約制プライベートタトゥースタジオです。あま市、大治町、蟹江町、津島市、名古屋市港区、南区、中川区、名古屋近郊からのご相談にも対応しています。",
+
+fixedLine:
+"LINEで相談・予約"
+
 },
 
-en:{
-jpMark:"PRIVATE STUDIO · AICHI",
-heroLead:"A private appointment-only tattoo studio in Ama, Aichi. A calm and comfortable space for first-time clients and women as well.",
-lineCta:"BOOK / CONTACT ON LINE",
-instagramCta:"INSTAGRAM",
-studioTitle:"STUDIO",
-studioHeading:"A quiet, private tattoo studio designed like a hidden retreat.",
-studioText1:"Consult and receive your tattoo in a calm private environment without worrying about other customers.",
-studioText2:"First tattoo? You're welcome. Female clients are also welcome to contact us with any questions.",
-profileText:"Based in Ama, Aichi, TAROH specializes in Chicano, American Traditional, Black & Grey and Lettering tattoos.",
-viewInstagram:"VIEW WORKS ON INSTAGRAM",
-priceTitle:"PRICE",
-priceLead:"Approximate pricing by tattoo size. Final pricing varies depending on design, placement and detail.",
-coin:"Small / Coin Size",
-card:"Business Card Size",
-postcard:"Postcard Size",
-a4:"A4 Size",
-hourly:"Hourly / 1 Hour",
-priceNote:"Prices shown are estimates only. Final pricing depends on design, size, placement and session requirements. Contact us on LINE or Instagram for a quote.",
-areaText:"Located in Ama, Aichi, with convenient access from western Nagoya and surrounding areas.",
-mapText:"Google Business Profile is currently being prepared. Detailed location information will be provided after your booking.",
-bookingTitle:"BOOKING",
-bookingText:"For design consultations, pricing, size and appointment availability, contact us through LINE or Instagram.",
-seoCopy:"TAROH TATTOO is a private appointment-only tattoo studio in Ama, Aichi, serving clients from Nagoya, Oharu, Kanie, Tsushima, Minato, Minami and surrounding areas.",
-fixedLine:"BOOK / CONTACT"
+
+en: {
+
+jpMark:
+"PRIVATE STUDIO · AICHI",
+
+heroLead:
+"Private appointment-only tattoo studio in Ama, Aichi. A calm and comfortable space for first-time clients and women.",
+
+lineCta:
+"BOOK / CONTACT ON LINE",
+
+studioHeading:
+"A quiet private tattoo studio designed like a hidden retreat.",
+
+studioText1:
+"Discuss your design and receive your tattoo in a calm and private environment.",
+
+studioText2:
+"First tattoo? You're welcome. Female clients are also welcome to contact us with any questions.",
+
+profileText:
+"Based in Ama, Aichi, TAROH specializes in Chicano, American Traditional, Black & Grey and Lettering tattoos.",
+
+viewInstagram:
+"VIEW WORKS ON INSTAGRAM",
+
+priceLead:
+"Approximate pricing by tattoo size. Final pricing varies depending on design, placement and detail.",
+
+coin:
+"Small / Coin Size",
+
+card:
+"Business Card Size",
+
+postcard:
+"Postcard Size",
+
+a4:
+"A4 Size",
+
+hourly:
+"Hourly / 1 Hour",
+
+priceNote:
+"Prices shown are estimates only. Final pricing depends on design, size, placement and session requirements. Contact us on LINE or Instagram for a quote.",
+
+areaText:
+"Located in Ama, Aichi, with convenient access from western Nagoya and surrounding areas.",
+
+mapText:
+"Google Business Profile is currently being prepared. Detailed location information will be provided after booking.",
+
+bookingTitle:
+"BOOKING",
+
+bookingText:
+"For design consultations, pricing, size and appointment information, contact us through LINE or Instagram.",
+
+seoCopy:
+"TAROH TATTOO is a private appointment-only tattoo studio in Ama, Aichi, serving clients from Nagoya, Oharu, Kanie, Tsushima, Minato, Minami and surrounding areas.",
+
+fixedLine:
+"BOOK / CONTACT"
+
 },
 
-es:{
-jpMark:"ESTUDIO PRIVADO · AICHI",
-heroLead:"Estudio privado de tatuajes con cita previa en Ama, Aichi. Un espacio tranquilo para clientes primerizos y mujeres.",
-lineCta:"RESERVAR / LINE",
-instagramCta:"INSTAGRAM",
-studioTitle:"ESTUDIO",
-studioHeading:"Un estudio privado y tranquilo, como un refugio escondido.",
-studioText1:"Consulta tu diseño y realiza tu sesión en un espacio privado y relajado.",
-studioText2:"Si es tu primer tatuaje o tienes cualquier duda, puedes consultarnos con total confianza.",
-profileText:"TAROH trabaja en Ama, Aichi, principalmente con Chicano, American Traditional, Black & Grey y Lettering.",
-viewInstagram:"VER TRABAJOS EN INSTAGRAM",
-priceTitle:"PRECIOS",
-priceLead:"Precios aproximados según el tamaño. El precio final depende del diseño, zona y nivel de detalle.",
-coin:"Pequeño / Tamaño Moneda",
-card:"Tamaño Tarjeta",
-postcard:"Tamaño Postal",
-a4:"Tamaño A4",
-hourly:"Por Hora / 1 Hora",
-priceNote:"Los precios indicados son orientativos. El precio final depende del diseño, tamaño, zona y contenido de la sesión. Solicita presupuesto por LINE o Instagram.",
-areaText:"Estudio ubicado en Ama, Aichi, con fácil acceso desde Nagoya y localidades cercanas.",
-mapText:"Nuestro perfil de Google Business está en preparación. La ubicación detallada se facilitará al confirmar la reserva.",
-bookingTitle:"RESERVAS",
-bookingText:"Para consultas sobre diseño, precio, tamaño o disponibilidad, contáctanos por LINE o Instagram.",
-seoCopy:"TAROH TATTOO es un estudio privado de tatuajes con cita previa en Ama, Aichi, cerca de Nagoya, Oharu, Kanie, Tsushima y otras zonas cercanas.",
-fixedLine:"RESERVAR / LINE"
+
+es: {
+
+jpMark:
+"ESTUDIO PRIVADO · AICHI",
+
+heroLead:
+"Estudio privado de tatuajes con cita previa en Ama, Aichi. Un espacio tranquilo para clientes primerizos y mujeres.",
+
+lineCta:
+"RESERVAR / LINE",
+
+studioHeading:
+"Un estudio privado y tranquilo, como un refugio escondido.",
+
+studioText1:
+"Consulta tu diseño y realiza tu sesión en un espacio privado y relajado.",
+
+studioText2:
+"Si es tu primer tatuaje o tienes dudas, puedes consultarnos con confianza.",
+
+profileText:
+"TAROH trabaja en Ama, Aichi, principalmente con Chicano, American Traditional, Black & Grey y Lettering.",
+
+viewInstagram:
+"VER TRABAJOS EN INSTAGRAM",
+
+priceLead:
+"Precios aproximados según el tamaño. El precio final depende del diseño, zona y nivel de detalle.",
+
+coin:
+"Pequeño / Tamaño Moneda",
+
+card:
+"Tamaño Tarjeta",
+
+postcard:
+"Tamaño Postal",
+
+a4:
+"Tamaño A4",
+
+hourly:
+"Por Hora / 1 Hora",
+
+priceNote:
+"Los precios indicados son orientativos. El precio final depende del diseño, tamaño, zona y contenido de la sesión. Solicita presupuesto por LINE o Instagram.",
+
+areaText:
+"Estudio ubicado en Ama, Aichi, con fácil acceso desde Nagoya y localidades cercanas.",
+
+mapText:
+"Nuestro perfil de Google Business está en preparación. La ubicación detallada se facilitará al confirmar la reserva.",
+
+bookingTitle:
+"RESERVAS",
+
+bookingText:
+"Para consultas sobre diseño, precio, tamaño o disponibilidad, contáctanos por LINE o Instagram.",
+
+seoCopy:
+"TAROH TATTOO es un estudio privado de tatuajes con cita previa en Ama, Aichi, cerca de Nagoya, Oharu, Kanie, Tsushima y otras zonas cercanas.",
+
+fixedLine:
+"RESERVAR / LINE"
+
 },
 
-pt:{
-jpMark:"ESTÚDIO PRIVADO · AICHI",
-heroLead:"Estúdio privado de tatuagem com atendimento somente por reserva em Ama, Aichi. Um espaço tranquilo para iniciantes e clientes mulheres.",
-lineCta:"RESERVAR / LINE",
-instagramCta:"INSTAGRAM",
-studioTitle:"ESTÚDIO",
-studioHeading:"Um estúdio privado e tranquilo, com clima de espaço secreto.",
-studioText1:"Converse sobre o desenho e faça sua sessão em um ambiente reservado e confortável.",
-studioText2:"Primeira tatuagem? Sem problema. Clientes mulheres também podem entrar em contato para tirar dúvidas.",
-profileText:"TAROH trabalha em Ama, Aichi, principalmente com Chicano, American Traditional, Black & Grey e Lettering.",
-viewInstagram:"VER TRABALHOS NO INSTAGRAM",
-priceTitle:"PREÇOS",
-priceLead:"Valores aproximados conforme o tamanho. O preço final varia de acordo com desenho, local e nível de detalhe.",
-coin:"Pequeno / Tamanho de Moeda",
-card:"Tamanho de Cartão",
-postcard:"Tamanho de Postal",
-a4:"Tamanho A4",
-hourly:"Por Hora / 1 Hora",
-priceNote:"Os valores são apenas estimativas. O preço final depende do desenho, tamanho, local e conteúdo da sessão. Consulte pelo LINE ou Instagram.",
-areaText:"Localizado em Ama, Aichi, com fácil acesso a partir de Nagoya e regiões próximas.",
-mapText:"Nosso perfil do Google Business está em preparação. O endereço detalhado será informado após a confirmação da reserva.",
-bookingTitle:"RESERVAS",
-bookingText:"Para consultar desenho, preço, tamanho e disponibilidade, entre em contato pelo LINE ou Instagram.",
-seoCopy:"TAROH TATTOO é um estúdio privado de tatuagem com atendimento por reserva em Ama, Aichi, próximo a Nagoya, Oharu, Kanie, Tsushima e outras regiões.",
-fixedLine:"RESERVAR / LINE"
+
+pt: {
+
+jpMark:
+"ESTÚDIO PRIVADO · AICHI",
+
+heroLead:
+"Estúdio privado de tatuagem com atendimento somente por reserva em Ama, Aichi. Um espaço tranquilo para iniciantes e clientes mulheres.",
+
+lineCta:
+"RESERVAR / LINE",
+
+studioHeading:
+"Um estúdio privado e tranquilo, com clima de espaço secreto.",
+
+studioText1:
+"Converse sobre o desenho e faça sua sessão em um ambiente reservado e confortável.",
+
+studioText2:
+"Primeira tatuagem? Sem problema. Clientes mulheres também podem entrar em contato para tirar dúvidas.",
+
+profileText:
+"TAROH trabalha em Ama, Aichi, principalmente com Chicano, American Traditional, Black & Grey e Lettering.",
+
+viewInstagram:
+"VER TRABALHOS NO INSTAGRAM",
+
+priceLead:
+"Valores aproximados conforme o tamanho. O preço final varia de acordo com desenho, local e nível de detalhe.",
+
+coin:
+"Pequeno / Tamanho de Moeda",
+
+card:
+"Tamanho de Cartão",
+
+postcard:
+"Tamanho de Postal",
+
+a4:
+"Tamanho A4",
+
+hourly:
+"Por Hora / 1 Hora",
+
+priceNote:
+"Os valores são apenas estimativas. O preço final depende do desenho, tamanho, local e conteúdo da sessão. Consulte pelo LINE ou Instagram.",
+
+areaText:
+"Localizado em Ama, Aichi, com fácil acesso a partir de Nagoya e regiões próximas.",
+
+mapText:
+"Nosso perfil do Google Business está em preparação. O endereço detalhado será informado após a confirmação da reserva.",
+
+bookingTitle:
+"RESERVAS",
+
+bookingText:
+"Para consultar desenho, preço, tamanho e disponibilidade, entre em contato pelo LINE ou Instagram.",
+
+seoCopy:
+"TAROH TATTOO é um estúdio privado de tatuagem com atendimento por reserva em Ama, Aichi, próximo a Nagoya, Oharu, Kanie, Tsushima e outras regiões.",
+
+fixedLine:
+"RESERVAR / LINE"
+
 }
 
 };
 
-const seo={
 
-ja:{
-title:"TAROH TATTOO | 愛知県あま市の完全予約制タトゥースタジオ",
-description:"愛知県あま市の完全予約制プライベートタトゥースタジオ TAROH。名古屋、大治、蟹江、津島、港区、南区近郊。Chicano、American Traditional、Black & Grey、Letteringを中心に対応。"
+const seo = {
+
+ja: {
+title:
+"TAROH TATTOO | 愛知県あま市の完全予約制タトゥースタジオ",
+
+description:
+"愛知県あま市の完全予約制プライベートタトゥースタジオ TAROH。名古屋、大治、蟹江、津島、港区、南区近郊。Chicano、American Traditional、Black & Grey、Letteringを中心に対応。"
 },
 
-en:{
-title:"TAROH TATTOO | Private Tattoo Studio in Ama, Aichi",
-description:"Private tattoo studio in Ama, Aichi near Nagoya. Chicano, American Traditional, Black & Grey and Lettering tattoos by TAROH."
+en: {
+title:
+"TAROH TATTOO | Private Tattoo Studio in Ama, Aichi",
+
+description:
+"Private tattoo studio in Ama, Aichi near Nagoya. Chicano, American Traditional, Black & Grey and Lettering tattoos by TAROH."
 },
 
-es:{
-title:"TAROH TATTOO | Estudio de tatuajes en Ama, Aichi",
-description:"Estudio privado de tatuajes en Ama, Aichi, cerca de Nagoya. Chicano, American Traditional, Black & Grey y Lettering."
+es: {
+title:
+"TAROH TATTOO | Estudio de tatuajes en Ama, Aichi",
+
+description:
+"Estudio privado de tatuajes en Ama, Aichi, cerca de Nagoya. Chicano, American Traditional, Black & Grey y Lettering."
 },
 
-pt:{
-title:"TAROH TATTOO | Estúdio de tatuagem em Ama, Aichi",
-description:"Estúdio privado de tatuagem em Ama, Aichi, próximo a Nagoya. Chicano, American Traditional, Black & Grey e Lettering."
+pt: {
+title:
+"TAROH TATTOO | Estúdio de tatuagem em Ama, Aichi",
+
+description:
+"Estúdio privado de tatuagem em Ama, Aichi, próximo a Nagoya. Chicano, American Traditional, Black & Grey e Lettering."
 }
 
 };
+
 
 function changeLanguage(lang){
 
-const t=translations[lang];
+const t = translations[lang];
 
-document.documentElement.lang=lang;
+document.documentElement.lang = lang;
 
-document.querySelectorAll("[data-i18n]").forEach(el=>{
+document
+.querySelectorAll("[data-i18n]")
+.forEach(el => {
 
-const key=el.dataset.i18n;
+const key = el.dataset.i18n;
 
 if(t[key]){
-el.textContent=t[key];
+el.textContent = t[key];
 }
 
 });
 
-document.querySelectorAll(".lang-btn").forEach(btn=>{
+
+document
+.querySelectorAll(".lang-btn")
+.forEach(btn => {
 
 btn.classList.toggle(
 "active",
-btn.dataset.lang===lang
+btn.dataset.lang === lang
 );
 
 });
 
-document.title=seo[lang].title;
+
+document.title =
+seo[lang].title;
+
 
 document
 .getElementById("metaDescription")
@@ -1031,6 +1328,7 @@ document
 seo[lang].description
 );
 
+
 localStorage.setItem(
 "tarohLanguage",
 lang
@@ -1038,36 +1336,29 @@ lang
 
 }
 
+
 document
 .querySelectorAll(".lang-btn")
-.forEach(btn=>{
+.forEach(btn => {
 
 btn.addEventListener(
 "click",
-()=>{
-
-changeLanguage(
-btn.dataset.lang
-);
-
-}
+() => changeLanguage(btn.dataset.lang)
 );
 
 });
 
-const savedLanguage=
-localStorage.getItem(
-"tarohLanguage"
-);
+
+const savedLanguage =
+localStorage.getItem("tarohLanguage");
+
 
 if(
 savedLanguage &&
 translations[savedLanguage]
 ){
 
-changeLanguage(
-savedLanguage
-);
+changeLanguage(savedLanguage);
 
 }
 
