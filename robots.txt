@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tarohtattoo.github.io/taroh-website/sitemap.xml
