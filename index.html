@@ -3,10 +3,661 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TAROH TATTOO</title>
+
+  <title>TAROH TATTOO | 愛知・あま市 タトゥースタジオ</title>
+
+  <meta name="description" content="愛知県あま市の完全予約制タトゥースタジオ TAROH TATTOO。Black & Grey、Chicano、Japanese、Lettering、Realism、Custom Tattoo。">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #050505;
+      color: #f5f5f5;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* HEADER */
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 72px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: 0 6%;
+
+      background: rgba(5,5,5,.88);
+      backdrop-filter: blur(10px);
+
+      border-bottom: 1px solid #222;
+
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: 4px;
+    }
+
+    nav {
+      display: flex;
+      gap: 28px;
+
+      font-size: 12px;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      opacity: .7;
+      transition: .3s;
+    }
+
+    nav a:hover {
+      opacity: 1;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 100svh;
+
+      display: flex;
+      align-items: flex-end;
+
+      padding: 110px 7% 10%;
+
+      position: relative;
+      overflow: hidden;
+
+      background:
+        radial-gradient(
+          circle at 70% 30%,
+          #242424 0%,
+          #0b0b0b 35%,
+          #020202 75%
+        );
+    }
+
+    .hero::after {
+      content: "";
+
+      position: absolute;
+      inset: 0;
+
+      background:
+        linear-gradient(
+          to bottom,
+          rgba(0,0,0,.05),
+          rgba(0,0,0,.75)
+        );
+
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+
+      max-width: 900px;
+    }
+
+    .hero-small {
+      font-size: 11px;
+      letter-spacing: 5px;
+      color: #aaa;
+
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: clamp(54px, 12vw, 150px);
+      line-height: .85;
+
+      letter-spacing: -4px;
+      font-weight: 900;
+    }
+
+    .hero-sub {
+      margin-top: 28px;
+
+      font-size: 13px;
+      letter-spacing: 3px;
+
+      color: #bbb;
+    }
+
+    .hero-button {
+      display: inline-block;
+
+      margin-top: 38px;
+
+      border: 1px solid #eee;
+
+      padding: 16px 30px;
+
+      font-size: 11px;
+      letter-spacing: 3px;
+
+      transition: .3s;
+    }
+
+    .hero-button:hover {
+      background: #fff;
+      color: #000;
+    }
+
+    /* COMMON */
+
+    section {
+      padding: 110px 7%;
+    }
+
+    .section-number {
+      font-size: 10px;
+      letter-spacing: 4px;
+      color: #666;
+
+      margin-bottom: 20px;
+    }
+
+    .section-title {
+      font-size: clamp(36px, 7vw, 80px);
+
+      letter-spacing: -2px;
+      line-height: 1;
+
+      margin-bottom: 50px;
+    }
+
+    /* ABOUT */
+
+    .about {
+      background: #090909;
+    }
+
+    .about-text {
+      max-width: 760px;
+
+      font-size: 17px;
+      line-height: 2;
+
+      color: #bbb;
+    }
+
+    /* STYLE */
+
+    .styles {
+      background: #050505;
+    }
+
+    .style-list {
+      border-top: 1px solid #222;
+    }
+
+    .style-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      padding: 25px 0;
+
+      border-bottom: 1px solid #222;
+
+      font-size: clamp(20px, 4vw, 40px);
+
+      transition: .3s;
+    }
+
+    .style-item span:last-child {
+      font-size: 11px;
+      letter-spacing: 2px;
+      color: #666;
+    }
+
+    .style-item:hover {
+      padding-left: 10px;
+    }
+
+    /* GALLERY */
+
+    .gallery {
+      background: #0a0a0a;
+    }
+
+    .gallery-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 8px;
+    }
+
+    .gallery-box {
+      aspect-ratio: 4 / 5;
+
+      background:
+        linear-gradient(
+          135deg,
+          #181818,
+          #080808
+        );
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      color: #444;
+
+      font-size: 10px;
+      letter-spacing: 3px;
+    }
+
+    /* BOOKING */
+
+    .booking {
+      text-align: center;
+
+      padding-top: 140px;
+      padding-bottom: 140px;
+    }
+
+    .booking h2 {
+      font-size: clamp(45px, 10vw, 110px);
+
+      line-height: .9;
+      letter-spacing: -3px;
+    }
+
+    .booking p {
+      margin-top: 30px;
+
+      color: #888;
+
+      font-size: 12px;
+      letter-spacing: 2px;
+    }
+
+    .booking-button {
+      display: inline-block;
+
+      margin-top: 40px;
+
+      padding: 18px 40px;
+
+      background: #fff;
+      color: #000;
+
+      font-size: 11px;
+      font-weight: bold;
+
+      letter-spacing: 3px;
+    }
+
+    /* INFO */
+
+    .info {
+      background: #0a0a0a;
+
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 60px;
+    }
+
+    .info h3 {
+      font-size: 12px;
+      letter-spacing: 3px;
+
+      margin-bottom: 20px;
+    }
+
+    .info p {
+      color: #888;
+
+      font-size: 14px;
+      line-height: 2;
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 40px 7%;
+
+      border-top: 1px solid #222;
+
+      display: flex;
+      justify-content: space-between;
+
+      font-size: 9px;
+      letter-spacing: 2px;
+
+      color: #555;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 700px) {
+
+      header {
+        height: 64px;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .hero {
+        padding:
+          100px 6%
+          16%;
+      }
+
+      .hero h1 {
+        font-size: 20vw;
+        letter-spacing: -3px;
+      }
+
+      section {
+        padding:
+          90px 6%;
+      }
+
+      .gallery-grid {
+        grid-template-columns:
+          1fr 1fr;
+      }
+
+      .info {
+        grid-template-columns:
+          1fr;
+
+        gap: 45px;
+      }
+
+      footer {
+        flex-direction: column;
+
+        gap: 10px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>TAROH TATTOO</h1>
-  <p>Official Website</p>
+
+<header>
+
+  <div class="logo">
+    TAROH
+  </div>
+
+  <nav>
+    <a href="#about">ABOUT</a>
+    <a href="#style">STYLE</a>
+    <a href="#gallery">WORKS</a>
+    <a href="#booking">BOOKING</a>
+  </nav>
+
+</header>
+
+
+<main>
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <div class="hero-small">
+      PRIVATE TATTOO STUDIO / AICHI JAPAN
+    </div>
+
+    <h1>
+      TAROH
+    </h1>
+
+    <div class="hero-sub">
+      BLACK & GREY / CHICANO / JAPANESE / REALISM
+    </div>
+
+    <a
+      href="#booking"
+      class="hero-button"
+    >
+      BOOK APPOINTMENT
+    </a>
+
+  </div>
+
+</section>
+
+
+<section
+  class="about"
+  id="about"
+>
+
+  <div class="section-number">
+    01 / ABOUT
+  </div>
+
+  <h2 class="section-title">
+    PRIVATE<br>
+    TATTOO STUDIO
+  </h2>
+
+  <div class="about-text">
+
+    愛知県あま市を拠点とする
+    完全予約制タトゥースタジオ。
+
+    <br><br>
+
+    Black & Grey、Chicano、
+    Japanese、Lettering、
+    Realismを中心に、
+    一人ひとりのイメージに合わせた
+    オリジナルデザインを制作します。
+
+  </div>
+
+</section>
+
+
+<section
+  class="styles"
+  id="style"
+>
+
+  <div class="section-number">
+    02 / STYLE
+  </div>
+
+  <h2 class="section-title">
+    TATTOO STYLE
+  </h2>
+
+
+  <div class="style-list">
+
+    <div class="style-item">
+      <span>BLACK & GREY</span>
+      <span>01</span>
+    </div>
+
+    <div class="style-item">
+      <span>CHICANO</span>
+      <span>02</span>
+    </div>
+
+    <div class="style-item">
+      <span>JAPANESE</span>
+      <span>03</span>
+    </div>
+
+    <div class="style-item">
+      <span>LETTERING</span>
+      <span>04</span>
+    </div>
+
+    <div class="style-item">
+      <span>REALISM</span>
+      <span>05</span>
+    </div>
+
+    <div class="style-item">
+      <span>CUSTOM</span>
+      <span>06</span>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section
+  class="gallery"
+  id="gallery"
+>
+
+  <div class="section-number">
+    03 / SELECTED WORK
+  </div>
+
+  <h2 class="section-title">
+    WORKS
+  </h2>
+
+
+  <div class="gallery-grid">
+
+    <div class="gallery-box">
+      PHOTO 01
+    </div>
+
+    <div class="gallery-box">
+      PHOTO 02
+    </div>
+
+    <div class="gallery-box">
+      PHOTO 03
+    </div>
+
+    <div class="gallery-box">
+      PHOTO 04
+    </div>
+
+    <div class="gallery-box">
+      PHOTO 05
+    </div>
+
+    <div class="gallery-box">
+      PHOTO 06
+    </div>
+
+  </div>
+
+</section>
+
+
+<section
+  class="booking"
+  id="booking"
+>
+
+  <div class="section-number">
+    04 / BOOKING
+  </div>
+
+  <h2>
+    BOOK<br>
+    YOUR<br>
+    TATTOO
+  </h2>
+
+  <p>
+    完全予約制 / 18歳未満不可
+  </p>
+
+  <a
+    href="#"
+    class="booking-button"
+  >
+    CONTACT / BOOKING
+  </a>
+
+</section>
+
+
+<section class="info">
+
+  <div>
+
+    <h3>
+      STUDIO
+    </h3>
+
+    <p>
+      TAROH TATTOO<br>
+      Aichi / Ama City<br>
+      Private Tattoo Studio
+    </p>
+
+  </div>
+
+
+  <div>
+
+    <h3>
+      OPEN
+    </h3>
+
+    <p>
+      11:00 - 21:00<br>
+      Appointment Only
+    </p>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+  <div>
+    © 2026 TAROH TATTOO
+  </div>
+
+  <div>
+    AICHI JAPAN
+  </div>
+
+</footer>
+
 </body>
 </html>
