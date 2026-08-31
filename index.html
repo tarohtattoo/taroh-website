@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
   <meta charset="UTF-8">
 
@@ -10,81 +9,62 @@
   >
 
   <title>
-    TAROH TATTOO | 愛知・あま市 完全予約制タトゥースタジオ
+    TAROH TATTOO | 愛知県あま市の完全予約制タトゥースタジオ
   </title>
 
   <meta
     name="description"
-    content="愛知県あま市、名古屋からすぐの完全予約制プライベートタトゥースタジオ TAROH TATTOO。Black & Grey、Chicano、Japanese、Lettering、Realism、Custom Tattooを中心に制作。"
+    content="愛知県あま市の完全予約制プライベートタトゥースタジオ TAROH。名古屋、大治、蟹江、津島、港区、南区近郊。Chicano、American Traditional、Black & Grey、Letteringを中心に対応。初めての方・女性のお客様もご相談ください。"
   >
 
   <meta
-    name="robots"
-    content="index, follow, max-image-preview:large"
+    name="keywords"
+    content="あま市 タトゥー, 愛知 タトゥー, 名古屋 タトゥー, 大治 タトゥー, 蟹江 タトゥー, 津島 タトゥー, 港区 タトゥー, 南区 タトゥー, Chicano Tattoo Aichi, American Traditional Tattoo Nagoya"
   >
 
-  <meta name="theme-color" content="#050505">
+  <meta name="robots" content="index,follow">
 
-  <!--
-    ================================
-    OGP
-    ドメイン取得後にURLを変更
-    ================================
-  -->
+  <meta name="theme-color" content="#f4f1eb">
+
+  <meta property="og:type" content="website">
+
   <meta
     property="og:title"
-    content="TAROH TATTOO | AICHI JAPAN"
+    content="TAROH TATTOO | AMA AICHI"
   >
 
   <meta
     property="og:description"
-    content="Private Tattoo Studio in Ama, Aichi. Black & Grey / Chicano / Japanese / Lettering / Realism."
+    content="Private Tattoo Studio in Ama, Aichi. Chicano / American Traditional / Black & Grey / Lettering."
   >
 
-  <meta property="og:type" content="website">
-
-  <!--
-  <meta property="og:url" content="https://あなたのドメイン.com/">
-  <meta property="og:image" content="https://あなたのドメイン.com/og.jpg">
-  -->
-
-  <!-- Google向け構造化データ -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "TattooParlor",
     "name": "TAROH TATTOO",
-    "description": "愛知県あま市の完全予約制プライベートタトゥースタジオ。Black & Grey、Chicano、Japanese、Lettering、Realism、Custom Tattoo。",
-    "areaServed": [
-      {
-        "@type": "City",
-        "name": "あま市"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "愛知県"
-      }
-    ],
+    "description": "愛知県あま市の完全予約制プライベートタトゥースタジオ",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "あま市",
       "addressRegion": "愛知県",
       "addressCountry": "JP"
     },
+    "areaServed": [
+      "あま市",
+      "大治町",
+      "蟹江町",
+      "津島市",
+      "名古屋市港区",
+      "名古屋市南区"
+    ],
     "openingHours": "Mo-Su 11:00-21:00"
   }
   </script>
 
-
   <style>
 
-    /* =========================================
-       RESET
-    ========================================= */
-
-    *,
-    *::before,
-    *::after {
+    * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -92,28 +72,22 @@
 
     html {
       scroll-behavior: smooth;
-      background: #050505;
     }
 
     body {
-      background: #050505;
-      color: #f4f4f4;
       font-family:
         Arial,
         Helvetica,
         "Hiragino Kaku Gothic ProN",
-        "Hiragino Sans",
         "Yu Gothic",
         sans-serif;
 
-      line-height: 1.7;
-      letter-spacing: 0.02em;
-      overflow-x: hidden;
-      padding-bottom: 70px;
-    }
+      background: #f4f1eb;
+      color: #161616;
 
-    body.menu-open {
-      overflow: hidden;
+      line-height: 1.7;
+
+      padding-bottom: 72px;
     }
 
     a {
@@ -121,174 +95,70 @@
       text-decoration: none;
     }
 
-    button {
-      font: inherit;
-    }
-
-    img {
+    img,
+    video {
       display: block;
       width: 100%;
-      height: auto;
     }
-
-    ::selection {
-      background: #f2f2f2;
-      color: #050505;
-    }
-
-
-    /* =========================================
-       VARIABLES
-    ========================================= */
 
     :root {
-      --black: #050505;
-      --black2: #0a0a0a;
-      --black3: #111111;
-
-      --white: #f4f4f4;
-      --gray: #9c9c9c;
-      --gray2: #6d6d6d;
-
-      --line: rgba(255, 255, 255, 0.14);
-
-      --max: 1280px;
-      --side: 20px;
+      --paper: #f4f1eb;
+      --paper2: #ebe7df;
+      --ink: #151515;
+      --muted: #6f6a63;
+      --line: #cfc9bf;
+      --steel: #b8bab7;
+      --max: 1100px;
     }
 
-
-    /* =========================================
-       COMMON
-    ========================================= */
-
     .wrap {
-      width: min(
-        calc(100% - (var(--side) * 2)),
-        var(--max)
-      );
-
-      margin-inline: auto;
+      width: min(calc(100% - 36px), var(--max));
+      margin: auto;
     }
 
     .section {
-      padding: 94px 0;
+      padding: 80px 0;
       border-top: 1px solid var(--line);
     }
 
     .eyebrow {
-      color: #aaa;
       font-size: 10px;
       letter-spacing: 0.22em;
       text-transform: uppercase;
+      color: #777169;
       margin-bottom: 14px;
     }
 
-    .section-title {
-      font-size: clamp(42px, 12vw, 110px);
-      line-height: 0.88;
-      letter-spacing: -0.065em;
-      font-weight: 800;
+    h2 {
+      font-size: clamp(38px, 11vw, 90px);
+      line-height: 0.95;
+      letter-spacing: -0.055em;
+      margin-bottom: 25px;
     }
 
-    .section-intro {
-      margin-top: 28px;
-      max-width: 620px;
-      color: #aaa;
-      font-size: 14px;
+    p {
+      font-size: 13px;
     }
-
-    .button {
-      min-height: 54px;
-
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-
-      padding: 0 24px;
-
-      border: 1px solid #fff;
-
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 0.14em;
-
-      transition:
-        background 0.25s ease,
-        color 0.25s ease,
-        border-color 0.25s ease;
-    }
-
-    .button-solid {
-      background: #f5f5f5;
-      color: #050505;
-    }
-
-    .button-outline {
-      background: transparent;
-      color: #f5f5f5;
-    }
-
-    .button:hover {
-      background: #fff;
-      color: #050505;
-    }
-
-    .text-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-
-      padding-bottom: 4px;
-
-      border-bottom: 1px solid #777;
-
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 0.13em;
-    }
-
-    .muted {
-      color: #888;
-    }
-
-
-    /* =========================================
-       HEADER
-    ========================================= */
 
     .header {
       position: fixed;
-
       top: 0;
       left: 0;
       width: 100%;
 
-      height: 68px;
+      height: 62px;
 
       z-index: 1000;
 
-      display: flex;
-      align-items: center;
+      background: rgba(244, 241, 235, 0.92);
 
-      background:
-        linear-gradient(
-          to bottom,
-          rgba(5, 5, 5, 0.96),
-          rgba(5, 5, 5, 0.75)
-        );
-
-      backdrop-filter: blur(10px);
+      backdrop-filter: blur(12px);
 
       border-bottom: 1px solid var(--line);
     }
 
     .header-inner {
-      width: min(
-        calc(100% - 40px),
-        var(--max)
-      );
-
-      margin: auto;
+      height: 100%;
 
       display: flex;
       align-items: center;
@@ -298,136 +168,52 @@
     .logo {
       font-size: 18px;
       font-weight: 900;
-      letter-spacing: 0.07em;
-    }
-
-    .logo-small {
-      color: #777;
-      font-size: 8px;
-      letter-spacing: 0.2em;
-      margin-left: 7px;
-    }
-
-    .menu-button {
-      width: 44px;
-      height: 44px;
-
-      border: 0;
-      background: transparent;
-
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 7px;
-
-      cursor: pointer;
-    }
-
-    .menu-button span {
-      display: block;
-
-      width: 27px;
-      height: 1px;
-
-      margin-left: auto;
-
-      background: #fff;
-
-      transition: 0.25s;
-    }
-
-    .menu-button.active span:first-child {
-      transform:
-        translateY(4px)
-        rotate(45deg);
-    }
-
-    .menu-button.active span:last-child {
-      transform:
-        translateY(-4px)
-        rotate(-45deg);
-    }
-
-
-    /* =========================================
-       NAV
-    ========================================= */
-
-    .nav {
-      position: fixed;
-
-      inset: 68px 0 0 0;
-
-      z-index: 999;
-
-      background: rgba(5, 5, 5, 0.985);
-
-      display: none;
-
-      padding: 40px 24px 100px;
-
-      overflow-y: auto;
-    }
-
-    .nav.active {
-      display: block;
-    }
-
-    .nav-inner {
-      max-width: 700px;
-      margin: auto;
-    }
-
-    .nav a {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      min-height: 61px;
-
-      border-bottom: 1px solid var(--line);
-
-      font-size: 19px;
-      font-weight: 700;
       letter-spacing: 0.08em;
     }
 
-    .nav a span {
-      color: #555;
-      font-size: 10px;
+    .lang {
+      display: flex;
+      gap: 7px;
     }
 
+    .lang button {
+      background: transparent;
+      border: 0;
 
-    /* =========================================
-       HERO
-    ========================================= */
+      font-size: 18px;
+
+      cursor: pointer;
+
+      opacity: 0.55;
+    }
+
+    .lang button.active {
+      opacity: 1;
+    }
 
     .hero {
       min-height: 100svh;
 
-      padding:
-        110px
-        0
-        80px;
+      padding: 95px 0 55px;
 
       position: relative;
+
+      overflow: hidden;
 
       display: flex;
       align-items: flex-end;
 
-      overflow: hidden;
-
       background:
-        radial-gradient(
-          circle at 70% 30%,
-          rgba(255,255,255,0.07),
-          transparent 35%
+        linear-gradient(
+          rgba(244,241,235,0.58),
+          rgba(244,241,235,0.92)
         ),
         linear-gradient(
-          145deg,
-          #111 0%,
-          #050505 50%,
-          #090909 100%
+          135deg,
+          #b7b7b3 0%,
+          #e8e2d8 35%,
+          #a7aaa6 70%,
+          #d8d1c7 100%
         );
     }
 
@@ -437,38 +223,44 @@
       position: absolute;
       inset: 0;
 
-      opacity: 0.24;
-
-      background-image:
+      background:
         repeating-linear-gradient(
-          0deg,
-          transparent 0,
-          transparent 3px,
-          rgba(255,255,255,0.015) 4px
+          90deg,
+          rgba(30,30,30,0.04) 0,
+          rgba(30,30,30,0.04) 1px,
+          transparent 1px,
+          transparent 8px
         );
 
       pointer-events: none;
     }
 
-    .hero-background-text {
+    .hero::after {
+      content: "";
+
       position: absolute;
 
-      top: 19%;
-      left: -4%;
+      right: -90px;
+      top: 110px;
 
-      font-size: clamp(90px, 33vw, 460px);
+      width: 280px;
+      height: 420px;
 
-      font-weight: 900;
+      border: 1px solid rgba(0,0,0,0.12);
 
-      line-height: 0.7;
+      transform: rotate(6deg);
 
-      letter-spacing: -0.09em;
+      background:
+        linear-gradient(
+          160deg,
+          rgba(255,255,255,0.42),
+          rgba(80,80,80,0.08)
+        );
 
-      color: rgba(255,255,255,0.025);
+      box-shadow:
+        0 20px 45px rgba(0,0,0,0.08);
 
-      white-space: nowrap;
-
-      pointer-events: none;
+      z-index: 0;
     }
 
     .hero-content {
@@ -476,19 +268,27 @@
       z-index: 2;
     }
 
-    .hero-location {
-      margin-bottom: 23px;
+    .hero-jp {
+      writing-mode: vertical-rl;
 
-      font-size: 10px;
+      font-family:
+        "Yu Mincho",
+        "Hiragino Mincho ProN",
+        serif;
+
+      font-size: 12px;
+
       letter-spacing: 0.18em;
 
-      color: #aaa;
+      color: #6d6760;
+
+      margin-bottom: 25px;
     }
 
     .hero h1 {
-      font-size: clamp(67px, 22vw, 230px);
+      font-size: clamp(69px, 22vw, 180px);
 
-      line-height: 0.73;
+      line-height: 0.75;
 
       letter-spacing: -0.075em;
 
@@ -497,699 +297,820 @@
       margin-left: -5px;
     }
 
-    .hero-subtitle {
-      margin-top: 32px;
+    .hero-sub {
+      margin-top: 27px;
 
-      max-width: 550px;
+      font-size: 11px;
 
-      font-size: 12px;
-      line-height: 1.9;
+      letter-spacing: 0.13em;
 
-      letter-spacing: 0.1em;
+      line-height: 2;
 
-      color: #bbb;
+      color: #57534e;
+    }
+
+    .hero-local {
+      margin-top: 23px;
+
+      max-width: 520px;
+
+      font-size: 13px;
+
+      color: #4e4a45;
     }
 
     .hero-actions {
-      margin-top: 32px;
+      margin-top: 28px;
 
       display: grid;
       grid-template-columns: 1fr 1fr;
 
-      gap: 10px;
+      gap: 9px;
 
-      max-width: 420px;
+      max-width: 440px;
     }
 
-    .hero-note {
-      margin-top: 28px;
+    .button {
+      min-height: 55px;
 
-      color: #666;
-
-      font-size: 10px;
-      letter-spacing: 0.08em;
-    }
-
-
-    /* =========================================
-       INTRO
-    ========================================= */
-
-    .intro {
-      padding: 70px 0;
-    }
-
-    .intro-big {
-      max-width: 800px;
-
-      font-size: clamp(25px, 7vw, 51px);
-
-      line-height: 1.28;
-
-      letter-spacing: -0.035em;
-
-      font-weight: 600;
-    }
-
-    .intro-big span {
-      color: #777;
-    }
-
-    .intro-small {
-      margin-top: 36px;
-
-      max-width: 580px;
-
-      color: #888;
-
-      font-size: 13px;
-    }
-
-
-    /* =========================================
-       WORKS
-    ========================================= */
-
-    .filter-row {
       display: flex;
-      gap: 8px;
+      align-items: center;
+      justify-content: center;
 
-      overflow-x: auto;
+      border: 1px solid #171717;
 
-      margin-top: 38px;
-      padding-bottom: 10px;
+      font-size: 11px;
+      font-weight: 800;
 
-      scrollbar-width: none;
+      letter-spacing: 0.1em;
     }
 
-    .filter-row::-webkit-scrollbar {
-      display: none;
+    .button-dark {
+      background: #171717;
+      color: #f5f2eb;
     }
 
-    .filter-button {
-      flex: 0 0 auto;
+    .button-light {
+      background: rgba(255,255,255,0.32);
+    }
 
-      border: 1px solid var(--line);
-      background: transparent;
+    .metal-strip {
+      margin-top: 45px;
 
-      color: #888;
+      padding: 16px 18px;
 
-      min-height: 40px;
-      padding: 0 17px;
+      max-width: 490px;
+
+      background:
+        linear-gradient(
+          110deg,
+          #bdbfbb,
+          #e0e0dc,
+          #9fa19e
+        );
+
+      border: 1px solid #9b9c99;
+
+      box-shadow:
+        inset 0 0 0 1px rgba(255,255,255,0.35);
+
+      font-family:
+        "Courier New",
+        monospace;
 
       font-size: 10px;
-      font-weight: 700;
-
-      letter-spacing: 0.09em;
-
-      cursor: pointer;
+      letter-spacing: 0.12em;
     }
 
-    .filter-button.active {
-      background: #f5f5f5;
-      color: #050505;
-      border-color: #f5f5f5;
+    .metal-strip span {
+      display: block;
+    }
+
+    .works {
+      background: #f7f4ee;
     }
 
     .works-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-
       gap: 8px;
-
-      margin-top: 20px;
+      margin-top: 30px;
     }
 
     .work {
-      position: relative;
-
-      aspect-ratio: 0.78;
-
-      overflow: hidden;
+      aspect-ratio: 0.8;
 
       background:
-        radial-gradient(
-          circle at 50% 40%,
-          #242424,
-          #0d0d0d 68%
+        linear-gradient(
+          145deg,
+          #c7c3bc,
+          #dfdbd2
         );
 
-      cursor: pointer;
+      position: relative;
+
+      overflow: hidden;
     }
 
-    .work:nth-child(3n) {
-      grid-column: span 2;
-      aspect-ratio: 1.25;
+    .work:nth-child(3) {
+      grid-column: 1 / -1;
+      aspect-ratio: 1.4;
+    }
+
+    .work::after {
+      content: "TATTOO PHOTO";
+
+      position: absolute;
+
+      left: 12px;
+      bottom: 10px;
+
+      font-size: 9px;
+      letter-spacing: 0.12em;
+
+      color: rgba(0,0,0,0.45);
     }
 
     .work img {
       width: 100%;
       height: 100%;
-
       object-fit: cover;
-
-      filter: grayscale(100%);
-
-      transition:
-        transform 0.45s ease,
-        filter 0.45s ease;
     }
 
-    .work:hover img {
-      transform: scale(1.025);
-      filter: grayscale(0%);
+    .studio {
+      background: #e9e5dd;
     }
 
-    .work-placeholder {
-      position: absolute;
-      inset: 0;
+    .studio-panel {
+      margin-top: 30px;
 
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      padding: 26px;
 
-      color: #333;
-
-      font-weight: 900;
-
-      letter-spacing: 0.1em;
-
-      font-size: 11px;
-
-      text-align: center;
-    }
-
-    .work-label {
-      position: absolute;
-
-      left: 13px;
-      right: 13px;
-      bottom: 12px;
-
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
-
-      z-index: 2;
-    }
-
-    .work-label strong {
-      font-size: 10px;
-      letter-spacing: 0.1em;
-    }
-
-    .work-label span {
-      color: #999;
-      font-size: 8px;
-      letter-spacing: 0.1em;
-    }
-
-    .works-more {
-      margin-top: 34px;
-    }
-
-
-    /* =========================================
-       STYLE
-    ========================================= */
-
-    .style-list {
-      margin-top: 45px;
-
-      border-top: 1px solid var(--line);
-    }
-
-    .style-item {
-      padding: 26px 0;
-
-      display: grid;
-
-      grid-template-columns:
-        42px
-        1fr;
-
-      gap: 12px;
-
-      border-bottom: 1px solid var(--line);
-    }
-
-    .style-number {
-      color: #555;
-
-      font-size: 10px;
-      letter-spacing: 0.1em;
-    }
-
-    .style-item h3 {
-      font-size: clamp(23px, 7vw, 45px);
-
-      letter-spacing: -0.04em;
-
-      line-height: 1;
-
-      margin-bottom: 10px;
-    }
-
-    .style-item p {
-      color: #777;
-      font-size: 12px;
-      max-width: 500px;
-    }
-
-
-    /* =========================================
-       PRICE
-    ========================================= */
-
-    .dark-panel {
-      background: #0a0a0a;
-    }
-
-    .price-table {
-      margin-top: 46px;
-      border-top: 1px solid var(--line);
-    }
-
-    .price-row {
-      padding: 22px 0;
-
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 25px;
-
-      border-bottom: 1px solid var(--line);
-    }
-
-    .price-row span {
-      color: #999;
-
-      font-size: 10px;
-      letter-spacing: 0.13em;
-    }
-
-    .price-row strong {
-      text-align: right;
-      font-size: 16px;
-    }
-
-    .price-note {
-      margin-top: 24px;
-
-      color: #666;
-
-      font-size: 11px;
-    }
-
-
-    /* =========================================
-       FIRST
-    ========================================= */
-
-    .flow {
-      margin-top: 45px;
-    }
-
-    .flow-item {
-      padding: 26px 0;
-
-      display: grid;
-
-      grid-template-columns:
-        48px
-        1fr;
-
-      border-top: 1px solid var(--line);
-    }
-
-    .flow-item:last-child {
-      border-bottom: 1px solid var(--line);
-    }
-
-    .flow-num {
-      color: #555;
-      font-size: 11px;
-    }
-
-    .flow-content h3 {
-      font-size: 18px;
-      letter-spacing: 0.06em;
-      margin-bottom: 8px;
-    }
-
-    .flow-content p {
-      color: #888;
-      font-size: 12px;
-    }
-
-
-    /* =========================================
-       ABOUT
-    ========================================= */
-
-    .about-visual {
-      margin-top: 40px;
-
-      aspect-ratio: 0.95;
+      border: 1px solid #aaa59d;
 
       background:
-        radial-gradient(
-          circle at 50% 35%,
-          #292929,
-          #0c0c0c 68%
+        linear-gradient(
+          135deg,
+          rgba(255,255,255,0.45),
+          rgba(170,170,165,0.2)
         );
 
-      position: relative;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      overflow: hidden;
+      box-shadow:
+        0 20px 40px rgba(0,0,0,0.05);
     }
 
-    .about-visual::after {
-      content: "ARTIST PHOTO";
+    .studio-panel h3 {
+      font-family:
+        "Yu Mincho",
+        "Hiragino Mincho ProN",
+        serif;
 
-      color: #333;
+      font-size: 25px;
 
-      font-size: 11px;
-      font-weight: 700;
-
-      letter-spacing: 0.15em;
+      margin-bottom: 18px;
     }
 
-    .about-copy {
+    .studio-panel p {
+      color: #5e5953;
+      margin-bottom: 13px;
+    }
+
+    .artist-card {
       margin-top: 35px;
-    }
-
-    .about-copy h3 {
-      font-size: 29px;
-      margin-bottom: 16px;
-    }
-
-    .about-copy p {
-      color: #999;
-
-      font-size: 13px;
-
-      margin-bottom: 16px;
-    }
-
-
-    /* =========================================
-       FAQ
-    ========================================= */
-
-    .faq-list {
-      margin-top: 45px;
-      border-top: 1px solid var(--line);
-    }
-
-    details {
-      border-bottom: 1px solid var(--line);
-    }
-
-    summary {
-      position: relative;
-
-      list-style: none;
-
-      padding: 24px 42px 24px 0;
-
-      cursor: pointer;
-
-      font-size: 13px;
-      font-weight: 700;
-    }
-
-    summary::-webkit-details-marker {
-      display: none;
-    }
-
-    summary::after {
-      content: "+";
-
-      position: absolute;
-
-      right: 4px;
-      top: 50%;
-
-      transform: translateY(-50%);
-
-      color: #777;
-
-      font-size: 21px;
-      font-weight: 300;
-    }
-
-    details[open] summary::after {
-      content: "−";
-    }
-
-    details p {
-      color: #888;
-
-      font-size: 12px;
-
-      padding:
-        0
-        20px
-        24px
-        0;
-    }
-
-
-    /* =========================================
-       ACCESS
-    ========================================= */
-
-    .access-grid {
-      margin-top: 46px;
-    }
-
-    .access-row {
-      padding: 21px 0;
 
       display: grid;
+      grid-template-columns: 105px 1fr;
+      gap: 20px;
 
-      grid-template-columns:
-        110px
-        1fr;
+      align-items: center;
+    }
 
-      gap: 10px;
+    .artist-photo {
+      aspect-ratio: 1;
+
+      background:
+        linear-gradient(
+          145deg,
+          #b8b5af,
+          #ddd8d0
+        );
+
+      border: 1px solid #aaa49b;
+    }
+
+    .artist-card h3 {
+      font-size: 25px;
+      margin-bottom: 6px;
+    }
+
+    .artist-card p {
+      color: #66615b;
+    }
+
+    .styles {
+      margin-top: 37px;
 
       border-top: 1px solid var(--line);
     }
 
-    .access-row:last-child {
+    .style-row {
+      display: flex;
+      justify-content: space-between;
+
+      gap: 18px;
+
+      padding: 17px 0;
+
       border-bottom: 1px solid var(--line);
     }
 
-    .access-row dt {
-      color: #666;
+    .style-row span:first-child {
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .style-row span:last-child {
+      color: #888179;
+      font-size: 10px;
+    }
+
+    .area {
+      background: #f0ece4;
+    }
+
+    .area-list {
+      margin-top: 30px;
+
+      display: flex;
+      flex-wrap: wrap;
+
+      gap: 8px;
+    }
+
+    .area-list span {
+      padding: 9px 13px;
+
+      border: 1px solid #bab4aa;
+
+      font-size: 10px;
+
+      background: rgba(255,255,255,0.35);
+    }
+
+    .map-coming {
+      margin-top: 30px;
+
+      padding: 24px;
+
+      border: 1px solid #aaa49b;
+
+      background:
+        repeating-linear-gradient(
+          135deg,
+          rgba(0,0,0,0.025) 0,
+          rgba(0,0,0,0.025) 5px,
+          transparent 5px,
+          transparent 10px
+        );
+    }
+
+    .map-coming small {
+      letter-spacing: 0.15em;
+      color: #777168;
+    }
+
+    .map-coming strong {
+      display: block;
+
+      margin-top: 7px;
+
+      font-size: 24px;
+    }
+
+    .booking {
+      background: #181818;
+      color: #f0ede7;
+    }
+
+    .booking .eyebrow {
+      color: #99938b;
+    }
+
+    .booking p {
+      color: #b8b2aa;
+    }
+
+    .booking-buttons {
+      margin-top: 28px;
+
+      display: grid;
+      gap: 9px;
+    }
+
+    .booking .button {
+      border-color: #e7e1d9;
+    }
+
+    .booking .button-dark {
+      background: #eee9e1;
+      color: #171717;
+    }
+
+    footer {
+      padding: 45px 0 100px;
+
+      background: #181818;
+      color: #eee9e1;
+
+      border-top: 1px solid #333;
+    }
+
+    .footer-logo {
+      font-size: 38px;
+      font-weight: 900;
+      letter-spacing: -0.04em;
+    }
+
+    .footer-text {
+      margin-top: 12px;
+
+      color: #77736e;
 
       font-size: 9px;
       letter-spacing: 0.12em;
     }
 
-    .access-row dd {
-      font-size: 13px;
+    .mobile-cta {
+      position: fixed;
+
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      z-index: 1000;
+
+      height: 66px;
+
+      display: grid;
+      grid-template-columns: 1fr 1.3fr;
+
+      background: #f5f1ea;
+
+      border-top: 1px solid #bbb5ab;
     }
 
-    .coming-soon-box {
-      margin-top: 34px;
-
-      border: 1px solid var(--line);
-
-      min-height: 160px;
-
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-
-      padding: 26px;
-    }
-
-    .coming-soon-box span {
-      color: #555;
-
-      font-size: 9px;
-      letter-spacing: 0.18em;
-
-      margin-bottom: 8px;
-    }
-
-    .coming-soon-box strong {
-      font-size: 25px;
-      letter-spacing: -0.03em;
-    }
-
-    .coming-soon-box p {
-      color: #777;
-      font-size: 11px;
-      margin-top: 8px;
-    }
-
-
-    /* =========================================
-       EVENT
-    ========================================= */
-
-    .event-card {
-      margin-top: 40px;
-
-      min-height: 220px;
-
-      border: 1px solid var(--line);
-
-      padding: 28px;
-
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .event-card small {
-      color: #666;
-      letter-spacing: 0.16em;
-    }
-
-    .event-card h3 {
-      font-size: 31px;
-      letter-spacing: -0.04em;
-    }
-
-    .event-card p {
-      color: #777;
-      font-size: 12px;
-    }
-
-
-    /* =========================================
-       YOUTUBE
-    ========================================= */
-
-    .youtube-card {
-      margin-top: 40px;
-
-      aspect-ratio: 16 / 9;
-
-      border: 1px solid var(--line);
-
-      position: relative;
-
+    .mobile-cta a {
       display: flex;
       align-items: center;
       justify-content: center;
 
-      background: #090909;
-    }
-
-    .youtube-play {
-      width: 62px;
-      height: 62px;
-
-      border: 1px solid #777;
-
-      border-radius: 50%;
-
-      display: grid;
-      place-items: center;
-
-      font-size: 15px;
-
-      color: #888;
-    }
-
-    .youtube-status {
-      position: absolute;
-
-      bottom: 18px;
-      left: 18px;
-
-      color: #555;
-
-      font-size: 9px;
-      letter-spacing: 0.15em;
-    }
-
-
-    /* =========================================
-       BOOKING
-    ========================================= */
-
-    .booking {
-      padding:
-        100px
-        0
-        110px;
-
-      background: #f3f3f3;
-      color: #050505;
-    }
-
-    .booking .eyebrow {
-      color: #777;
-    }
-
-    .booking-title {
-      font-size: clamp(59px, 18vw, 170px);
-
-      line-height: 0.8;
-
-      letter-spacing: -0.075em;
-
-      font-weight: 900;
-    }
-
-    .booking-copy {
-      margin-top: 28px;
-
-      max-width: 560px;
-
-      color: #555;
-
-      font-size: 13px;
-    }
-
-    .booking-buttons {
-      display: grid;
-
-      grid-template-columns: 1fr;
-
-      gap: 10px;
-
-      margin-top: 35px;
-
-      max-width: 480px;
-    }
-
-    .booking-button {
-      min-height: 61px;
-
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-
-      padding: 0 20px;
-
-      border: 1px solid #050505;
-
-      color: #050505;
-
-      font-size: 11px;
+      font-size: 10px;
       font-weight: 800;
-      letter-spacing: 0.11em;
+
+      letter-spacing: 0.08em;
     }
 
-    .booking-button.primary {
-      background: #050505;
-      color: #fff;
+    .mobile-cta a:last-child {
+      background: #171717;
+      color: #f5f1ea;
     }
 
-    .booking-button.disabled {
-      opacity: 0.35;
-      pointer-events: none;
+    @media (min-width: 800px) {
+
+      body {
+        padding-bottom: 0;
+      }
+
+      .hero-actions {
+        grid-template-columns: 180px 180px;
+      }
+
+      .works-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .work:nth-child(3) {
+        grid-column: auto;
+        aspect-ratio: 0.8;
+      }
+
+      .artist-card {
+        grid-template-columns: 180px 1fr;
+      }
+
+      .mobile-cta {
+        display: none;
+      }
+
     }
 
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+
+    <div class="wrap header-inner">
+
+      <a href="#top" class="logo">
+        TAROH
+      </a>
+
+      <div class="lang">
+        <button class="active">🇯🇵</button>
+        <button>🇬🇧</button>
+        <button>🇪🇸</button>
+        <button>🇧🇷</button>
+      </div>
+
+    </div>
+
+  </header>
+
+  <main>
+
+    <section class="hero" id="top">
+
+      <div class="wrap hero-content">
+
+        <div class="hero-jp">
+          愛知・あま市
+          私設彫刻室
+        </div>
+
+        <h1>
+          TAROH
+        </h1>
+
+        <p class="hero-sub">
+          PRIVATE TATTOO STUDIO<br>
+          AMA / AICHI / JAPAN
+        </p>
+
+        <p class="hero-local">
+          愛知県あま市の完全予約制プライベートタトゥースタジオ。
+          名古屋、大治、蟹江、津島、港区、南区からもアクセスしやすいエリアです。
+        </p>
+
+        <div class="hero-actions">
+
+          <a
+            class="button button-dark"
+            href="#booking"
+          >
+            LINEで相談
+          </a>
+
+          <a
+            class="button button-light"
+            href="#works"
+          >
+            WORKS
+          </a>
+
+        </div>
+
+        <div class="metal-strip">
+          <span>CHICANO</span>
+          <span>AMERICAN TRADITIONAL</span>
+          <span>BLACK & GREY / LETTERING</span>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="section works" id="works">
+
+      <div class="wrap">
+
+        <p class="eyebrow">
+          SELECTED WORKS
+        </p>
+
+        <h2>
+          WORKS
+        </h2>
+
+        <p>
+          作品写真はここに3〜6枚配置。
+          詳細な作品はInstagramへ誘導します。
+        </p>
+
+        <div class="works-grid">
+
+          <div class="work"></div>
+
+          <div class="work"></div>
+
+          <div class="work"></div>
+
+        </div>
+
+        <div style="margin-top:28px;">
+
+          <a
+            class="button button-light"
+            href="#"
+            id="instagramWorks"
+          >
+            INSTAGRAMを見る
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="section studio">
+
+      <div class="wrap">
+
+        <p class="eyebrow">
+          PRIVATE SPACE
+        </p>
+
+        <h2>
+          STUDIO
+        </h2>
+
+        <div class="studio-panel">
+
+          <h3>
+            静かな隠れ家のような、
+            完全予約制の空間。
+          </h3>
+
+          <p>
+            周囲を気にせず、
+            デザイン相談から施術まで
+            落ち着いて過ごせるプライベートスタジオです。
+          </p>
+
+          <p>
+            初めてタトゥーを入れる方、
+            女性のお客様もお気軽にご相談ください。
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="section">
+
+      <div class="wrap">
+
+        <p class="eyebrow">
+          ARTIST
+        </p>
+
+        <h2>
+          TAROH
+        </h2>
+
+        <div class="artist-card">
+
+          <div class="artist-photo">
+          </div>
+
+          <div>
+
+            <h3>
+              TAROH
+            </h3>
+
+            <p>
+              Chicano、American Traditional、
+              Black & Grey、Letteringを中心に制作。
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="styles">
+
+          <div class="style-row">
+            <span>CHICANO</span>
+            <span>MAIN STYLE</span>
+          </div>
+
+          <div class="style-row">
+            <span>AMERICAN TRADITIONAL</span>
+            <span>MAIN STYLE</span>
+          </div>
+
+          <div class="style-row">
+            <span>BLACK & GREY</span>
+            <span>CUSTOM</span>
+          </div>
+
+          <div class="style-row">
+            <span>LETTERING</span>
+            <span>CUSTOM</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="section area">
+
+      <div class="wrap">
+
+        <p class="eyebrow">
+          AREA
+        </p>
+
+        <h2>
+          AMA
+        </h2>
+
+        <p>
+          愛知県あま市を拠点に、
+          名古屋西部・海部地域からアクセスしやすい立地です。
+        </p>
+
+        <div class="area-list">
+
+          <span>あま市</span>
+          <span>大治町</span>
+          <span>蟹江町</span>
+          <span>津島市</span>
+          <span>名古屋市港区</span>
+          <span>名古屋市南区</span>
+          <span>名古屋市中川区</span>
+
+        </div>
+
+        <div class="map-coming">
+
+          <small>
+            GOOGLE MAPS / BUSINESS PROFILE
+          </small>
+
+          <strong>
+            COMING SOON
+          </strong>
+
+          <p>
+            Googleビジネスプロフィール準備中。
+            詳細なアクセスはご予約時にご案内します。
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="section booking" id="booking">
+
+      <div class="wrap">
+
+        <p class="eyebrow">
+          RESERVATION / CONSULTATION
+        </p>
+
+        <h2>
+          BOOKING
+        </h2>
+
+        <p>
+          デザイン、料金、サイズ、施術時間など、
+          まずはLINEまたはInstagramからご相談ください。
+        </p>
+
+        <div class="booking-buttons">
+
+          <a
+            class="button button-dark"
+            href="#"
+            id="lineButton"
+          >
+            LINE OFFICIAL
+          </a>
+
+          <a
+            class="button"
+            href="#"
+            id="instagramButton"
+          >
+            INSTAGRAM
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+
+    <div class="wrap">
+
+      <div class="footer-logo">
+        TAROH
+      </div>
+
+      <div class="footer-text">
+        PRIVATE TATTOO STUDIO<br>
+        AMA / AICHI / JAPAN
+      </div>
+
+    </div>
+
+  </footer>
+
+  <div class="mobile-cta">
+
+    <a
+      href="#"
+      id="instagramMobile"
+    >
+      INSTAGRAM
+    </a>
+
+    <a
+      href="#"
+      id="lineMobile"
+    >
+      LINEで相談・予約
+    </a>
+
+  </div>
+
+  <script>
+
+    const SITE = {
+
+      instagram: "",
+
+      line: ""
+
+    };
+
+
+    function setLink(id, url) {
+
+      const element =
+        document.getElementById(id);
+
+      if (!element) return;
+
+
+      if (url) {
+
+        element.href = url;
+
+        element.target = "_blank";
+
+        element.rel =
+          "noopener noreferrer";
+
+      } else {
+
+        element.href = "#booking";
+
+      }
+
+    }
+
+
+    setLink(
+      "instagramWorks",
+      SITE.instagram
+    );
+
+    setLink(
+      "instagramButton",
+      SITE.instagram
+    );
+
+    setLink(
+      "instagramMobile",
+      SITE.instagram
+    );
+
+    setLink(
+      "lineButton",
+      SITE.line
+    );
+
+    setLink(
+      "lineMobile",
+      SITE.line
+    );
+
+  </script>
+
+</body>
+</html>
