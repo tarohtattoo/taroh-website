@@ -1,0 +1,2011 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <title>あま市のタトゥースタジオ｜TAROH TATTOO</title>
+  <meta id="meta-description" name="description" content="愛知県あま市七宝町の完全予約制プライベートタトゥースタジオ。初めての方や女性のお客様も、デザイン・料金・施術についてLINEで気軽にご相談いただけます。">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#111111">
+  <link rel="canonical" href="https://tarohtattoo.github.io/taroh-website/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="TAROH TATTOO">
+  <meta id="og-title" property="og:title" content="あま市のタトゥースタジオ｜TAROH TATTOO">
+  <meta id="og-description" property="og:description" content="初めての方や女性も相談しやすい、愛知県あま市の完全予約制プライベートスタジオ。">
+  <meta property="og:url" content="https://tarohtattoo.github.io/taroh-website/">
+  <meta property="og:image" content="https://tarohtattoo.github.io/taroh-website/hero-bg.webp">
+  <meta property="og:image:width" content="1536">
+  <meta property="og:image:height" content="1024">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preload" as="image" href="hero-bg.webp" type="image/webp" fetchpriority="high">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Serif+JP:wght@500;600&display=swap" rel="stylesheet">
+  <style>
+:root {
+  --ink: #111111;
+  --ink-soft: #1b1b1b;
+  --paper: #f5f3ee;
+  --white: #ffffff;
+  --muted: #6f6d68;
+  --line: #d8d4cc;
+  --line-dark: rgba(255, 255, 255, 0.16);
+  --accent: #b6936d;
+  --content: 1180px;
+  --serif: "Noto Serif JP", "Yu Mincho", "Hiragino Mincho ProN", serif;
+  --sans: "Inter", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  overflow-x: hidden;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body,
+button,
+a {
+  font-family: var(--sans);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+dl,
+dd,
+figure {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+button,
+a,
+summary {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.skip-link {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 200;
+  padding: 10px 14px;
+  color: var(--ink);
+  background: var(--white);
+  transform: translateY(-150%);
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.site-header {
+  position: absolute;
+  inset: 0 0 auto;
+  z-index: 20;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: min(var(--content), calc(100% - 64px));
+  margin: 0 auto;
+  padding-top: 26px;
+  color: var(--white);
+}
+
+.brand {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 1px;
+  width: fit-content;
+  line-height: 1;
+}
+
+.brand span {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+}
+
+.brand small {
+  margin-top: 5px;
+  color: inherit;
+  font-size: 0.625rem;
+  letter-spacing: 0.22em;
+  opacity: 0.72;
+}
+
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  padding: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(17, 17, 17, 0.2);
+  backdrop-filter: blur(12px);
+}
+
+.lang-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  min-width: 58px;
+  min-height: 36px;
+  padding: 0 8px;
+  border: 0;
+  color: rgba(255, 255, 255, 0.64);
+  background: transparent;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+}
+
+.lang-button:hover,
+.lang-button.is-active {
+  color: var(--ink);
+  background: var(--white);
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  min-height: 100svh;
+  overflow: hidden;
+  color: var(--white);
+  background: var(--ink);
+}
+
+.hero-image,
+.hero-shade {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-image {
+  object-fit: cover;
+  object-position: center;
+  transform: scale(1.015);
+}
+
+.hero-shade {
+  background:
+    linear-gradient(90deg, rgba(5, 5, 5, 0.82) 0%, rgba(5, 5, 5, 0.58) 42%, rgba(5, 5, 5, 0.08) 78%),
+    linear-gradient(0deg, rgba(5, 5, 5, 0.84) 0%, rgba(5, 5, 5, 0.12) 44%, rgba(5, 5, 5, 0.28) 100%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  width: min(var(--content), calc(100% - 64px));
+  margin: 0 auto;
+  padding: 150px 0 82px;
+}
+
+.eyebrow,
+.section-label {
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  line-height: 1.5;
+}
+
+.hero h1 {
+  max-width: 880px;
+  margin-top: 22px;
+  font-family: var(--serif);
+  font-size: clamp(2.6rem, 6.2vw, 5.7rem);
+  font-weight: 500;
+  letter-spacing: -0.045em;
+  line-height: 1.28;
+  text-wrap: balance;
+}
+
+.hero-lead {
+  max-width: 650px;
+  margin-top: 26px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: clamp(1rem, 1.6vw, 1.125rem);
+  line-height: 2;
+}
+
+.hero-actions,
+.booking-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 36px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 56px;
+  padding: 0 25px;
+  border: 1px solid transparent;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.button::after {
+  content: "→";
+  margin-left: 20px;
+  font-size: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.button:hover::after {
+  transform: translateX(4px);
+}
+
+.button-light {
+  color: var(--ink);
+  background: var(--white);
+}
+
+.button-light:hover {
+  background: #e9e7e1;
+}
+
+.button-ghost {
+  border-color: rgba(255, 255, 255, 0.34);
+  color: var(--white);
+  background: rgba(17, 17, 17, 0.16);
+  backdrop-filter: blur(8px);
+}
+
+.button-ghost:hover {
+  border-color: var(--white);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.hero-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+  margin-top: 34px;
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+}
+
+.hero-facts li {
+  position: relative;
+}
+
+.hero-facts li:not(:first-child)::before {
+  position: absolute;
+  top: 50%;
+  left: -16px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--accent);
+  content: "";
+  transform: translateY(-50%);
+}
+
+.hero-side {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  right: 26px;
+  color: rgba(255, 255, 255, 0.44);
+  font-size: 0.625rem;
+  letter-spacing: 0.25em;
+  writing-mode: vertical-rl;
+  transform: translateY(-50%);
+}
+
+.scroll-cue {
+  position: absolute;
+  z-index: 3;
+  right: max(32px, calc((100vw - var(--content)) / 2));
+  bottom: 38px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: rgba(255, 255, 255, 0.54);
+  font-size: 0.625rem;
+  letter-spacing: 0.2em;
+}
+
+.scroll-cue::after {
+  width: 46px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.48);
+  content: "";
+}
+
+.trust-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: var(--white);
+  background: var(--ink);
+  border-top: 1px solid var(--line-dark);
+}
+
+.trust-strip article {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 14px;
+  min-height: 162px;
+  padding: 36px max(28px, calc((100vw - var(--content)) / 6));
+  border-right: 1px solid var(--line-dark);
+}
+
+.trust-strip article:last-child {
+  border-right: 0;
+}
+
+.trust-strip article > span {
+  color: var(--accent);
+  font-size: 0.6875rem;
+  letter-spacing: 0.12em;
+}
+
+.trust-strip h2 {
+  font-family: var(--serif);
+  font-size: 1.0625rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.trust-strip p {
+  margin-top: 8px;
+  color: rgba(255, 255, 255, 0.56);
+  font-size: 0.8125rem;
+  line-height: 1.8;
+}
+
+.section {
+  padding: 116px 0;
+}
+
+.section-light {
+  background: var(--paper);
+}
+
+.section-inner {
+  width: min(var(--content), calc(100% - 64px));
+  margin: 0 auto;
+}
+
+.section-title {
+  margin-top: 17px;
+  font-family: var(--serif);
+  font-size: clamp(2rem, 4.2vw, 3.75rem);
+  font-weight: 500;
+  letter-spacing: -0.035em;
+  line-height: 1.45;
+  text-wrap: balance;
+}
+
+.intro-grid,
+.artist-grid,
+.price-grid,
+.faq-grid,
+.access-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(52px, 8vw, 118px);
+}
+
+.body-copy {
+  color: #55534e;
+  font-size: 1rem;
+  line-height: 2.15;
+}
+
+.body-copy p + p {
+  margin-top: 20px;
+}
+
+.reassurance-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 82px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.reassurance-grid article {
+  min-height: 250px;
+  padding: 30px 30px 34px 0;
+  border-right: 1px solid var(--line);
+}
+
+.reassurance-grid article + article {
+  padding-left: 30px;
+}
+
+.reassurance-grid article:last-child {
+  border-right: 0;
+}
+
+.reassurance-grid span,
+.flow-list > li > span {
+  color: var(--accent);
+  font-size: 0.6875rem;
+  letter-spacing: 0.12em;
+}
+
+.reassurance-grid h3 {
+  margin-top: 55px;
+  font-family: var(--serif);
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.reassurance-grid p {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 0.875rem;
+  line-height: 2;
+}
+
+.artist-section {
+  color: var(--white);
+  background: var(--ink-soft);
+}
+
+.artist-grid {
+  align-items: center;
+}
+
+.artist-photo-wrap {
+  position: relative;
+  padding: 0 0 24px 24px;
+}
+
+.artist-photo-wrap::before {
+  position: absolute;
+  inset: 24px 24px 0 0;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  content: "";
+}
+
+.artist-photo {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: 52% 52%;
+  filter: saturate(0.72) contrast(1.03);
+}
+
+.artist-photo-wrap figcaption {
+  position: absolute;
+  z-index: 2;
+  right: 4px;
+  bottom: 0;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.625rem;
+  letter-spacing: 0.18em;
+  writing-mode: vertical-rl;
+}
+
+.artist-name {
+  margin-top: 18px;
+  font-family: var(--serif);
+  font-size: clamp(3.8rem, 7vw, 6.8rem);
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+}
+
+.artist-role {
+  margin-top: 8px;
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 0.6875rem;
+  letter-spacing: 0.17em;
+}
+
+.artist-content .body-copy {
+  margin-top: 36px;
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.style-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 30px;
+}
+
+.style-list li {
+  padding: 7px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.625rem;
+  letter-spacing: 0.1em;
+}
+
+.works-callout {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 28px;
+  margin-top: 42px;
+  padding-top: 27px;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.works-callout h3 {
+  font-family: var(--serif);
+  font-size: 1.0625rem;
+  font-weight: 500;
+}
+
+.works-callout p {
+  max-width: 430px;
+  margin-top: 8px;
+  color: rgba(255, 255, 255, 0.52);
+  font-size: 0.8125rem;
+  line-height: 1.8;
+}
+
+.text-link {
+  flex: 0 0 auto;
+  padding-bottom: 4px;
+  border-bottom: 1px solid currentColor;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.text-link:hover {
+  color: var(--accent);
+}
+
+.section-heading-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+  gap: 70px;
+  align-items: end;
+}
+
+.section-heading-row > p {
+  padding-bottom: 12px;
+  color: var(--muted);
+}
+
+.flow-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 60px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.flow-list li {
+  min-height: 250px;
+  padding: 28px 26px 34px 0;
+  border-right: 1px solid var(--line);
+}
+
+.flow-list li + li {
+  padding-left: 26px;
+}
+
+.flow-list li:last-child {
+  border-right: 0;
+}
+
+.flow-list li div {
+  margin-top: 58px;
+}
+
+.flow-list h3 {
+  font-family: var(--serif);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.flow-list p {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 0.8125rem;
+  line-height: 1.9;
+}
+
+.price-section {
+  background: var(--white);
+}
+
+.price-intro > p:not(.section-label, .price-note) {
+  max-width: 500px;
+  margin-top: 27px;
+  color: var(--muted);
+}
+
+.price-note {
+  max-width: 500px;
+  margin-top: 18px;
+  color: #939089;
+  font-size: 0.75rem;
+}
+
+.price-list {
+  border-top: 1px solid var(--ink);
+}
+
+.price-list > div {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 24px;
+  align-items: center;
+  min-height: 82px;
+  border-bottom: 1px solid var(--line);
+}
+
+.price-list dt {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.price-list dd {
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  white-space: nowrap;
+}
+
+.price-list dd span {
+  margin-left: 3px;
+  font-family: var(--sans);
+  font-size: 0.6875rem;
+}
+
+.faq-intro {
+  margin-top: 22px;
+  color: var(--muted);
+}
+
+.accordion {
+  border-top: 1px solid var(--ink);
+}
+
+.accordion details {
+  border-bottom: 1px solid var(--line);
+}
+
+.accordion summary {
+  position: relative;
+  padding: 25px 48px 25px 0;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.7;
+  list-style: none;
+  cursor: pointer;
+}
+
+.accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordion summary::before,
+.accordion summary::after {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  width: 15px;
+  height: 1px;
+  background: var(--ink);
+  content: "";
+  transition: transform 0.2s ease;
+}
+
+.accordion summary::after {
+  transform: rotate(90deg);
+}
+
+.accordion details[open] summary::after {
+  transform: rotate(0);
+}
+
+.accordion details p {
+  padding: 0 48px 25px 0;
+  color: var(--muted);
+  font-size: 0.875rem;
+  line-height: 2;
+}
+
+.access-section {
+  background: var(--white);
+}
+
+.area-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 27px;
+}
+
+.area-list li {
+  padding: 6px 11px;
+  border: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.6875rem;
+}
+
+.booking-section {
+  position: relative;
+  overflow: hidden;
+  padding: 120px 32px;
+  color: var(--white);
+  background: var(--ink);
+  text-align: center;
+}
+
+.booking-section::before,
+.booking-section::after {
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 50%;
+  content: "";
+}
+
+.booking-section::before {
+  top: -250px;
+  left: -100px;
+}
+
+.booking-section::after {
+  right: -120px;
+  bottom: -260px;
+}
+
+.booking-inner {
+  position: relative;
+  z-index: 1;
+  width: min(820px, 100%);
+  margin: 0 auto;
+}
+
+.booking-section h2 {
+  margin-top: 20px;
+  font-family: var(--serif);
+  font-size: clamp(2.2rem, 5vw, 4.6rem);
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  line-height: 1.4;
+}
+
+.booking-section .booking-inner > p:not(.section-label) {
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.booking-actions {
+  align-items: center;
+  justify-content: center;
+}
+
+.light-link {
+  margin: 0 15px;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 36px;
+  align-items: end;
+  padding: 55px max(32px, calc((100vw - var(--content)) / 2));
+  color: rgba(255, 255, 255, 0.5);
+  background: #090909;
+  border-top: 1px solid var(--line-dark);
+  font-size: 0.6875rem;
+  letter-spacing: 0.08em;
+}
+
+.footer-brand {
+  color: var(--white);
+}
+
+.footer-links {
+  display: flex;
+  gap: 22px;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.footer-links a:hover {
+  color: var(--white);
+}
+
+.mobile-actions {
+  display: none;
+}
+
+@media (max-width: 980px) {
+  .trust-strip article {
+    grid-template-columns: 32px 1fr;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  .intro-grid,
+  .artist-grid,
+  .price-grid,
+  .faq-grid,
+  .access-grid {
+    gap: 55px;
+  }
+
+  .flow-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .flow-list li:nth-child(2) {
+    border-right: 0;
+  }
+
+  .flow-list li:nth-child(-n + 2) {
+    border-bottom: 1px solid var(--line);
+  }
+
+  footer {
+    grid-template-columns: 1fr auto;
+  }
+
+  footer > p {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  html {
+    scroll-padding-top: 16px;
+  }
+
+  body {
+    padding-bottom: calc(68px + env(safe-area-inset-bottom));
+  }
+
+  .site-header,
+  .hero-content,
+  .section-inner {
+    width: calc(100% - 36px);
+  }
+
+  .site-header {
+    padding-top: 18px;
+  }
+
+  .brand span {
+    font-size: 0.875rem;
+  }
+
+  .brand small {
+    font-size: 0.5625rem;
+  }
+
+  .language-switcher {
+    gap: 1px;
+    padding: 3px;
+  }
+
+  .lang-button {
+    gap: 3px;
+    min-width: 48px;
+    min-height: 34px;
+    padding: 0 4px;
+    font-size: 0.6875rem;
+  }
+
+  .hero {
+    min-height: 92svh;
+  }
+
+  .hero-image {
+    object-position: 60% center;
+  }
+
+  .hero-shade {
+    background:
+      linear-gradient(90deg, rgba(5, 5, 5, 0.78) 0%, rgba(5, 5, 5, 0.32) 100%),
+      linear-gradient(0deg, rgba(5, 5, 5, 0.94) 0%, rgba(5, 5, 5, 0.34) 57%, rgba(5, 5, 5, 0.35) 100%);
+  }
+
+  .hero-content {
+    padding: 120px 0 42px;
+  }
+
+  .eyebrow,
+  .section-label {
+    font-size: 0.6875rem;
+    letter-spacing: 0.15em;
+  }
+
+  .hero h1 {
+    margin-top: 17px;
+    font-size: clamp(2.25rem, 11vw, 3.45rem);
+    line-height: 1.38;
+  }
+
+  html[lang="es"] .hero h1,
+  html[lang="pt"] .hero h1 {
+    font-size: clamp(2.05rem, 9.8vw, 3.1rem);
+  }
+
+  .hero-lead {
+    margin-top: 18px;
+    font-size: 0.9375rem;
+    line-height: 1.85;
+  }
+
+  .hero-actions {
+    display: grid;
+    margin-top: 27px;
+  }
+
+  .hero-actions .button {
+    width: 100%;
+  }
+
+  .button {
+    min-height: 54px;
+    padding: 0 19px;
+  }
+
+  .hero-facts {
+    gap: 8px 22px;
+    margin-top: 23px;
+    font-size: 0.6875rem;
+  }
+
+  .hero-facts li:not(:first-child)::before {
+    left: -13px;
+  }
+
+  .hero-side,
+  .scroll-cue {
+    display: none;
+  }
+
+  .trust-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .trust-strip article {
+    min-height: 0;
+    padding: 23px 18px;
+    border-right: 0;
+    border-bottom: 1px solid var(--line-dark);
+  }
+
+  .trust-strip article:last-child {
+    border-bottom: 0;
+  }
+
+  .section {
+    padding: 78px 0;
+  }
+
+  .section-title {
+    margin-top: 13px;
+    font-size: clamp(1.85rem, 9vw, 2.75rem);
+    line-height: 1.5;
+  }
+
+  .intro-grid,
+  .artist-grid,
+  .price-grid,
+  .faq-grid,
+  .access-grid,
+  .section-heading-row {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .body-copy {
+    font-size: 0.9375rem;
+    line-height: 2;
+  }
+
+  .reassurance-grid {
+    grid-template-columns: 1fr;
+    margin-top: 54px;
+  }
+
+  .reassurance-grid article,
+  .reassurance-grid article + article {
+    min-height: 0;
+    padding: 23px 0 25px;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .reassurance-grid article:last-child {
+    border-bottom: 0;
+  }
+
+  .reassurance-grid h3 {
+    margin-top: 22px;
+  }
+
+  .artist-grid {
+    gap: 54px;
+  }
+
+  .artist-photo-wrap {
+    padding: 0 0 18px 18px;
+  }
+
+  .artist-name {
+    font-size: 4rem;
+  }
+
+  .artist-content .body-copy {
+    margin-top: 28px;
+  }
+
+  .works-callout {
+    display: block;
+  }
+
+  .works-callout .text-link {
+    display: inline-block;
+    margin-top: 20px;
+  }
+
+  .section-heading-row > p {
+    padding-bottom: 0;
+  }
+
+  .flow-list {
+    grid-template-columns: 1fr;
+    margin-top: 43px;
+  }
+
+  .flow-list li,
+  .flow-list li + li {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    gap: 13px;
+    min-height: 0;
+    padding: 22px 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .flow-list li:nth-child(-n + 2) {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .flow-list li:last-child {
+    border-bottom: 0;
+  }
+
+  .flow-list li div {
+    margin-top: 0;
+  }
+
+  .price-intro > p:not(.section-label, .price-note) {
+    margin-top: 20px;
+  }
+
+  .price-list > div {
+    min-height: 70px;
+  }
+
+  .price-list dd {
+    font-size: 1.15rem;
+  }
+
+  .faq-grid {
+    gap: 45px;
+  }
+
+  .accordion summary {
+    padding: 22px 42px 22px 0;
+    font-size: 0.875rem;
+  }
+
+  .accordion details p {
+    padding: 0 35px 23px 0;
+    font-size: 0.8125rem;
+  }
+
+  .booking-section {
+    padding: 86px 18px;
+  }
+
+  .booking-section h2 {
+    font-size: clamp(2rem, 10vw, 3rem);
+  }
+
+  .booking-actions {
+    display: grid;
+    gap: 24px;
+  }
+
+  .light-link {
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 44px 18px;
+  }
+
+  footer > p {
+    display: block;
+  }
+
+  .mobile-actions {
+    position: fixed;
+    z-index: 100;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: 0.78fr 1.22fr;
+    min-height: calc(58px + env(safe-area-inset-bottom));
+    padding: 6px 6px calc(6px + env(safe-area-inset-bottom));
+    background: rgba(245, 243, 238, 0.94);
+    box-shadow: 0 -8px 30px rgba(17, 17, 17, 0.12);
+    backdrop-filter: blur(15px);
+  }
+
+  .mobile-actions a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+  }
+
+  .mobile-instagram {
+    color: var(--ink);
+    background: var(--white);
+    border: 1px solid var(--line);
+  }
+
+  .mobile-line {
+    color: var(--white);
+    background: var(--ink);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.guide-feature{padding:96px 0;background:#171716;color:#fff}.guide-feature-inner{width:min(var(--content),calc(100% - 64px));margin:auto}.guide-feature-head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:42px}.guide-feature h2{font-family:var(--serif);font-size:clamp(2rem,4vw,3.4rem);font-weight:500;line-height:1.4}.guide-feature-head p{color:#bcb8b0}.guide-links{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.14)}.guide-link{min-height:230px;padding:34px;background:#1e1e1c;display:flex;flex-direction:column;transition:background .2s}.guide-link:hover{background:#292722}.guide-link small{color:var(--accent);letter-spacing:.16em}.guide-link h3{margin-top:18px;font-family:var(--serif);font-size:1.4rem;font-weight:500}.guide-link p{margin-top:12px;color:#aaa;font-size:.92rem}.guide-link span{margin-top:auto;padding-top:24px;color:#ddd;font-size:.8rem}@media(max-width:760px){.guide-feature{padding:70px 0}.guide-feature-inner{width:min(var(--content),calc(100% - 36px))}.guide-feature-head{grid-template-columns:1fr}.guide-links{grid-template-columns:1fr}.guide-link{min-height:200px}}
+
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "TattooParlor",
+        "@id": "https://tarohtattoo.github.io/taroh-website/#studio",
+        "name": "TAROH TATTOO",
+        "url": "https://tarohtattoo.github.io/taroh-website/",
+        "image": "https://tarohtattoo.github.io/taroh-website/hero-bg.webp",
+        "description": "愛知県あま市七宝町の完全予約制プライベートタトゥースタジオ。",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "あま市七宝町",
+          "addressRegion": "愛知県",
+          "addressCountry": "JP"
+        },
+        "areaServed": ["あま市", "津島市", "大治町", "蟹江町", "名古屋市中川区", "名古屋市港区", "名古屋市"],
+        "priceRange": "¥3,500〜",
+        "sameAs": ["https://www.instagram.com/ink.by.taroh/"]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "デザインが決まっていなくても相談できますか？",
+            "acceptedAnswer": {"@type": "Answer", "text": "はい。参考画像やイメージをもとに、サイズ・施術箇所・料金を含めてご相談いただけます。"}
+          },
+          {
+            "@type": "Question",
+            "name": "女性ひとりでも予約できますか？",
+            "acceptedAnswer": {"@type": "Answer", "text": "はい。完全予約制のプライベートスタジオです。"}
+          },
+          {
+            "@type": "Question",
+            "name": "未成年でも施術できますか？",
+            "acceptedAnswer": {"@type": "Answer", "text": "18歳未満の方への施術は行っていません。年齢確認のため身分証をご提示いただきます。"}
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main" data-i18n="skipLink">本文へ移動</a>
+
+  <header class="site-header" aria-label="Site header">
+    <a class="brand" href="#top" aria-label="TAROH TATTOO">
+      <span>TAROH</span>
+      <small>TATTOO STUDIO</small>
+    </a>
+
+    <div class="language-switcher" role="group" aria-label="Language">
+      <button type="button" class="lang-button is-active" data-lang="ja" aria-label="日本語" aria-pressed="true"><span aria-hidden="true">🇯🇵</span> JP</button>
+      <button type="button" class="lang-button" data-lang="en" aria-label="English" aria-pressed="false"><span aria-hidden="true">🇬🇧</span> EN</button>
+      <button type="button" class="lang-button" data-lang="es" aria-label="Español" aria-pressed="false"><span aria-hidden="true">🇪🇸</span> ES</button>
+      <button type="button" class="lang-button" data-lang="pt" aria-label="Português" aria-pressed="false"><span aria-hidden="true">🇧🇷</span> PT</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <img class="hero-image" src="hero-bg.webp" alt="" width="1536" height="1024" fetchpriority="high">
+      <div class="hero-shade"></div>
+      <p class="hero-side" aria-hidden="true">AMA / AICHI / JAPAN</p>
+
+      <div class="hero-content">
+        <p class="eyebrow" data-i18n="heroEyebrow">PRIVATE TATTOO STUDIO · AMA, AICHI</p>
+        <h1 id="hero-title" data-i18n="heroTitle">愛知県で、今タトゥーを入れたいなら。</h1>
+        <p class="hero-lead" data-i18n="heroLead">ファーストタトゥーも、明日彫りたい時も。デザイン・料金・空き状況をLINEで相談できます。</p>
+
+        <div class="hero-actions">
+          <a class="button button-light" href="https://lin.ee/nhTVjUf" target="_blank" rel="noopener" data-i18n="lineButton">LINEで相談・予約</a>
+          <a class="button button-ghost" href="https://www.instagram.com/ink.by.taroh/" target="_blank" rel="noopener" data-i18n="instagramButton">作品をInstagramで見る</a>
+        </div>
+
+        <ul class="hero-facts" aria-label="Studio information">
+          <li data-i18n="factPrivate">完全予約制</li>
+          <li data-i18n="factAge">18歳以上</li>
+          <li data-i18n="factHours">11:00–21:00</li>
+        </ul>
+      </div>
+
+      <a class="scroll-cue" href="#about" data-i18n="scrollLabel">SCROLL</a>
+    </section>
+
+    <section class="trust-strip" aria-label="Studio features">
+      <article>
+        <span>01</span>
+        <div>
+          <h2 data-i18n="trust1Title">初めての方も歓迎</h2>
+          <p data-i18n="trust1Text">デザインが決まる前から相談できます。</p>
+        </div>
+      </article>
+      <article>
+        <span>02</span>
+        <div>
+          <h2 data-i18n="trust2Title">女性も相談しやすい</h2>
+          <p data-i18n="trust2Text">周囲を気にせず話せる予約制の空間です。</p>
+        </div>
+      </article>
+      <article>
+        <span>03</span>
+        <div>
+          <h2 data-i18n="trust3Title">事前に料金を確認</h2>
+          <p data-i18n="trust3Text">内容を確認し、納得してから進めます。</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="section section-light" id="about">
+      <div class="section-inner intro-grid">
+        <div>
+          <p class="section-label" data-i18n="aboutEyebrow">FOR FIRST VISITORS</p>
+          <h2 class="section-title" data-i18n="aboutTitle">分からないことがあって、当たり前です。</h2>
+        </div>
+        <div class="body-copy">
+          <p data-i18n="aboutText1">初めてのタトゥーは、デザイン、痛み、料金、施術後のケアなど不安が多いものです。まだイメージが固まっていなくても問題ありません。</p>
+          <p data-i18n="aboutText2">まずはLINEで、参考画像・おおよそのサイズ・入れたい場所をお送りください。無理に予約を進めず、必要な情報を一つずつ分かりやすくお伝えします。</p>
+        </div>
+      </div>
+
+      <div class="section-inner reassurance-grid">
+        <article>
+          <span>01</span>
+          <h3 data-i18n="care1Title">相談から始められる</h3>
+          <p data-i18n="care1Text">予約を決める前に、サイズ・場所・デザイン・予算をご相談いただけます。</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3 data-i18n="care2Title">プライベート空間</h3>
+          <p data-i18n="care2Text">完全予約制。落ち着いた環境で相談と施術を行います。</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3 data-i18n="care3Title">施術後まで案内</h3>
+          <p data-i18n="care3Text">完成後の過ごし方やアフターケアについてもご案内します。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section artist-section" id="artist">
+      <div class="section-inner artist-grid">
+        <figure class="artist-photo-wrap">
+          <img class="artist-photo" src="profile-taroh.webp" width="1200" height="1347" loading="lazy" alt="TAROH TATTOOのタトゥーアーティストTAROH" data-i18n-alt="artistAlt">
+          <figcaption>TAROH / TATTOO ARTIST</figcaption>
+        </figure>
+
+        <div class="artist-content">
+          <p class="section-label" data-i18n="artistEyebrow">ABOUT THE ARTIST</p>
+          <h2 class="artist-name">TAROH</h2>
+          <p class="artist-role">TATTOO ARTIST · AICHI, JAPAN</p>
+          <div class="body-copy">
+            <p data-i18n="artistText1">愛知県あま市を拠点に、一人ひとりの希望や身体の流れに合わせたデザインを制作しています。</p>
+            <p data-i18n="artistText2">持ち込みイメージの相談から、おまかせのカスタムデザインまで対応しています。</p>
+          </div>
+
+          <ul class="style-list" aria-label="Tattoo styles">
+            <li>BLACK &amp; GREY</li>
+            <li>CHICANO</li>
+            <li>LETTERING</li>
+            <li>JAPANESE</li>
+            <li>CUSTOM</li>
+          </ul>
+
+          <div class="works-callout">
+            <div>
+              <h3 data-i18n="worksTitle">最新の作品はInstagramへ</h3>
+              <p data-i18n="worksText">仕上がりや得意な雰囲気を、実際の施術写真で確認できます。</p>
+            </div>
+            <a class="text-link" href="https://www.instagram.com/ink.by.taroh/" target="_blank" rel="noopener" data-i18n="worksButton">作品を見る ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="flow">
+      <div class="section-inner">
+        <p class="section-label" data-i18n="flowEyebrow">BOOKING FLOW</p>
+        <div class="section-heading-row">
+          <h2 class="section-title" data-i18n="flowTitle">ご相談から施術まで</h2>
+          <p data-i18n="flowLead">LINEから、次の4点を送るだけで相談できます。</p>
+        </div>
+
+        <ol class="flow-list">
+          <li>
+            <span>01</span>
+            <div>
+              <h3 data-i18n="flow1Title">LINEで相談</h3>
+              <p data-i18n="flow1Text">参考画像・サイズ・入れたい場所・希望日を送信。</p>
+            </div>
+          </li>
+          <li>
+            <span>02</span>
+            <div>
+              <h3 data-i18n="flow2Title">内容と料金を確認</h3>
+              <p data-i18n="flow2Text">デザインを整理し、料金と所要時間の目安をご案内。</p>
+            </div>
+          </li>
+          <li>
+            <span>03</span>
+            <div>
+              <h3 data-i18n="flow3Title">日時を決めて予約</h3>
+              <p data-i18n="flow3Text">内容に納得いただいた後、施術日を決定。</p>
+            </div>
+          </li>
+          <li>
+            <span>04</span>
+            <div>
+              <h3 data-i18n="flow4Title">当日確認・施術</h3>
+              <p data-i18n="flow4Text">位置とサイズを確認し、納得いただいてから開始。</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section price-section" id="price">
+      <div class="section-inner price-grid">
+        <div class="price-intro">
+          <p class="section-label" data-i18n="priceEyebrow">PRICE GUIDE</p>
+          <h2 class="section-title" data-i18n="priceTitle">料金の目安</h2>
+          <p data-i18n="priceLead">デザインの細かさ・サイズ・施術箇所によって変わるため、正式な料金は事前にお伝えします。</p>
+          <p class="price-note" data-i18n="priceNote">表示価格は目安です。正確なお見積りはLINEからお問い合わせください。</p>
+        </div>
+
+        <dl class="price-list">
+          <div>
+            <dt data-i18n="priceCoin">コインサイズ</dt>
+            <dd>¥3,500<span data-i18n="from">〜</span></dd>
+          </div>
+          <div>
+            <dt data-i18n="priceCard">名刺サイズ</dt>
+            <dd>¥15,000<span data-i18n="from">〜</span></dd>
+          </div>
+          <div>
+            <dt data-i18n="pricePostcard">はがきサイズ</dt>
+            <dd>¥30,000<span data-i18n="from">〜</span></dd>
+          </div>
+          <div>
+            <dt data-i18n="priceA4">A4サイズ</dt>
+            <dd>¥50,000<span data-i18n="from">〜</span></dd>
+          </div>
+          <div>
+            <dt data-i18n="priceHourly">時間彫り</dt>
+            <dd>¥10,000<span> / 1h</span></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section section-light faq-section" id="faq">
+      <div class="section-inner faq-grid">
+        <div>
+          <p class="section-label">FAQ</p>
+          <h2 class="section-title" data-i18n="faqTitle">よくあるご質問</h2>
+          <p class="faq-intro" data-i18n="faqLead">初めての方から多いご質問をまとめました。</p>
+        </div>
+
+        <div class="accordion">
+          <details>
+            <summary data-i18n="faq1Q">デザインが決まっていなくても相談できますか？</summary>
+            <p data-i18n="faq1A">はい。参考画像や好きな雰囲気を送っていただければ、サイズや施術箇所も含めて一緒に整理します。</p>
+          </details>
+          <details>
+            <summary data-i18n="faq2Q">女性ひとりでも予約できますか？</summary>
+            <p data-i18n="faq2A">はい。完全予約制のプライベートスタジオですので、周囲を気にせずご相談いただけます。</p>
+          </details>
+          <details>
+            <summary data-i18n="faq3Q">痛みが不安です。</summary>
+            <p data-i18n="faq3A">痛みには個人差があり、部位やサイズによっても変わります。初めての方には無理のない内容もご案内します。</p>
+          </details>
+          <details>
+            <summary data-i18n="faq4Q">どのように予約しますか？</summary>
+            <p data-i18n="faq4A">LINEから、参考画像・サイズ・入れたい場所・希望日をお送りください。内容を確認してご案内します。</p>
+          </details>
+          <details>
+            <summary data-i18n="faq5Q">未成年でも施術できますか？</summary>
+            <p data-i18n="faq5A">18歳未満の方への施術は行っていません。年齢確認のため身分証をご提示いただきます。</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section access-section">
+      <div class="section-inner access-grid">
+        <div>
+          <p class="section-label" data-i18n="accessEyebrow">LOCATION</p>
+          <h2 class="section-title" data-i18n="accessTitle">愛知県あま市七宝町</h2>
+        </div>
+        <div class="body-copy">
+          <p data-i18n="accessText1">完全予約制のプライベートスタジオです。詳しい所在地は、ご予約確定時にご案内します。</p>
+          <p data-i18n="accessText2">あま市・津島市・大治町・蟹江町・名古屋市西部など、近隣地域からもご相談いただいています。</p>
+          <ul class="area-list" aria-label="Service areas">
+            <li>あま市</li>
+            <li>津島市</li>
+            <li>大治町</li>
+            <li>蟹江町</li>
+            <li>名古屋市</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+<section class="guide-feature" aria-labelledby="guide-feature-title"><div class="guide-feature-inner"><div class="guide-feature-head"><div><p class="section-label">TATTOO JOURNAL</p><h2 id="guide-feature-title">初めて知ることを、<br>分かりやすく。</h2></div><p>痛み、施術後のケア、デザインの意味。予約前に知りたい情報を、彫師の視点でまとめています。</p></div><div class="guide-links"><a class="guide-link" href="guide/"><small>FIRST TATTOO</small><h3>初めてのタトゥー完全ガイド</h3><p>相談から当日の準備まで、最初の疑問を順番に解説。</p><span>詳しく読む →</span></a><a class="guide-link" href="guide/tattoo-pain/"><small>PAIN GUIDE</small><h3>タトゥーの痛みについて</h3><p>部位別の傾向と、負担を減らすための準備。</p><span>詳しく読む →</span></a><a class="guide-link" href="guide/tattoo-aftercare/"><small>AFTERCARE</small><h3>施術後のケアについて</h3><p>当日から完成までの洗い方、保湿、注意点。</p><span>詳しく読む →</span></a><a class="guide-link" href="guide/design-meanings/"><small>DESIGN MEANINGS</small><h3>タトゥーデザインの意味特集</h3><p>人気モチーフの一般的な意味と選び方。</p><span>詳しく読む →</span></a></div></div></section>
+    <section class="booking-section" id="booking">
+      <div class="booking-inner">
+        <p class="section-label" data-i18n="bookingEyebrow">BOOKING / CONSULTATION</p>
+        <h2 data-i18n="bookingTitle">まずは、聞きたいことだけでも。</h2>
+        <p data-i18n="bookingText">デザインが決まっていなくても大丈夫です。LINEで気軽にご相談ください。</p>
+        <div class="booking-actions">
+          <a class="button button-light" href="https://lin.ee/nhTVjUf" target="_blank" rel="noopener" data-i18n="lineButton">LINEで相談・予約</a>
+          <a class="text-link light-link" href="https://www.instagram.com/ink.by.taroh/" target="_blank" rel="noopener" data-i18n="instagramButton">作品をInstagramで見る</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#top" aria-label="TAROH TATTOO">
+      <span>TAROH</span>
+      <small>TATTOO STUDIO</small>
+    </a>
+    <p data-i18n="footerLocation">PRIVATE TATTOO STUDIO · AMA, AICHI</p>
+    <div class="footer-links">
+      <a href="https://lin.ee/nhTVjUf" target="_blank" rel="noopener">LINE</a>
+      <a href="https://www.instagram.com/ink.by.taroh/" target="_blank" rel="noopener">INSTAGRAM</a>
+    </div>
+    <small>© 2026 TAROH TATTOO</small>
+  </footer>
+
+  <nav class="mobile-actions" aria-label="Quick contact">
+    <a class="mobile-instagram" href="https://www.instagram.com/ink.by.taroh/" target="_blank" rel="noopener">INSTAGRAM</a>
+    <a class="mobile-line" href="https://lin.ee/nhTVjUf" target="_blank" rel="noopener" data-i18n="mobileLine">LINEで相談</a>
+  </nav>
+
+  <script>
+const translations = {
+  ja: {
+    skipLink: "本文へ移動",
+    heroEyebrow: "PRIVATE TATTOO STUDIO · AMA, AICHI",
+    heroTitle: "愛知県で、今タトゥーを入れたいなら。",
+    heroLead: "ファーストタトゥーも、明日彫りたい時も。デザイン・料金・空き状況をLINEで相談できます。",
+    lineButton: "LINEで相談・予約",
+    instagramButton: "作品をInstagramで見る",
+    factPrivate: "完全予約制",
+    factAge: "18歳以上",
+    factHours: "11:00–21:00",
+    scrollLabel: "SCROLL",
+    trust1Title: "初めての方も歓迎",
+    trust1Text: "デザインが決まる前から相談できます。",
+    trust2Title: "女性も相談しやすい",
+    trust2Text: "周囲を気にせず話せる予約制の空間です。",
+    trust3Title: "事前に料金を確認",
+    trust3Text: "内容を確認し、納得してから進めます。",
+    aboutEyebrow: "FOR FIRST VISITORS",
+    aboutTitle: "分からないことがあって、当たり前です。",
+    aboutText1: "初めてのタトゥーは、デザイン、痛み、料金、施術後のケアなど不安が多いものです。まだイメージが固まっていなくても問題ありません。",
+    aboutText2: "まずはLINEで、参考画像・おおよそのサイズ・入れたい場所をお送りください。無理に予約を進めず、必要な情報を一つずつ分かりやすくお伝えします。",
+    care1Title: "相談から始められる",
+    care1Text: "予約を決める前に、サイズ・場所・デザイン・予算をご相談いただけます。",
+    care2Title: "プライベート空間",
+    care2Text: "完全予約制。落ち着いた環境で相談と施術を行います。",
+    care3Title: "施術後まで案内",
+    care3Text: "完成後の過ごし方やアフターケアについてもご案内します。",
+    artistAlt: "TAROH TATTOOのタトゥーアーティストTAROH",
+    artistEyebrow: "ABOUT THE ARTIST",
+    artistText1: "愛知県あま市を拠点に、一人ひとりの希望や身体の流れに合わせたデザインを制作しています。",
+    artistText2: "持ち込みイメージの相談から、おまかせのカスタムデザインまで対応しています。",
+    worksTitle: "最新の作品はInstagramへ",
+    worksText: "仕上がりや得意な雰囲気を、実際の施術写真で確認できます。",
+    worksButton: "作品を見る ↗",
+    flowEyebrow: "BOOKING FLOW",
+    flowTitle: "ご相談から施術まで",
+    flowLead: "LINEから、次の4点を送るだけで相談できます。",
+    flow1Title: "LINEで相談",
+    flow1Text: "参考画像・サイズ・入れたい場所・希望日を送信。",
+    flow2Title: "内容と料金を確認",
+    flow2Text: "デザインを整理し、料金と所要時間の目安をご案内。",
+    flow3Title: "日時を決めて予約",
+    flow3Text: "内容に納得いただいた後、施術日を決定。",
+    flow4Title: "当日確認・施術",
+    flow4Text: "位置とサイズを確認し、納得いただいてから開始。",
+    priceEyebrow: "PRICE GUIDE",
+    priceTitle: "料金の目安",
+    priceLead: "デザインの細かさ・サイズ・施術箇所によって変わるため、正式な料金は事前にお伝えします。",
+    priceNote: "表示価格は目安です。正確なお見積りはLINEからお問い合わせください。",
+    priceCoin: "コインサイズ",
+    priceCard: "名刺サイズ",
+    pricePostcard: "はがきサイズ",
+    priceA4: "A4サイズ",
+    priceHourly: "時間彫り",
+    from: "〜",
+    faqTitle: "よくあるご質問",
+    faqLead: "初めての方から多いご質問をまとめました。",
+    faq1Q: "デザインが決まっていなくても相談できますか？",
+    faq1A: "はい。参考画像や好きな雰囲気を送っていただければ、サイズや施術箇所も含めて一緒に整理します。",
+    faq2Q: "女性ひとりでも予約できますか？",
+    faq2A: "はい。完全予約制のプライベートスタジオですので、周囲を気にせずご相談いただけます。",
+    faq3Q: "痛みが不安です。",
+    faq3A: "痛みには個人差があり、部位やサイズによっても変わります。初めての方には無理のない内容もご案内します。",
+    faq4Q: "どのように予約しますか？",
+    faq4A: "LINEから、参考画像・サイズ・入れたい場所・希望日をお送りください。内容を確認してご案内します。",
+    faq5Q: "未成年でも施術できますか？",
+    faq5A: "18歳未満の方への施術は行っていません。年齢確認のため身分証をご提示いただきます。",
+    accessEyebrow: "LOCATION",
+    accessTitle: "愛知県あま市七宝町",
+    accessText1: "完全予約制のプライベートスタジオです。詳しい所在地は、ご予約確定時にご案内します。",
+    accessText2: "あま市・津島市・大治町・蟹江町・名古屋市西部など、近隣地域からもご相談いただいています。",
+    bookingEyebrow: "BOOKING / CONSULTATION",
+    bookingTitle: "まずは、聞きたいことだけでも。",
+    bookingText: "デザインが決まっていなくても大丈夫です。LINEで気軽にご相談ください。",
+    footerLocation: "PRIVATE TATTOO STUDIO · AMA, AICHI",
+    mobileLine: "LINEで相談"
+  },
+
+  en: {
+    skipLink: "Skip to content",
+    heroEyebrow: "PRIVATE TATTOO STUDIO · AMA, AICHI",
+    heroTitle: "Ready for a tattoo in Aichi?",
+    heroLead: "Your first tattoo or an early appointment—ask about the design, price and availability through LINE.",
+    lineButton: "BOOK / CONTACT VIA LINE",
+    instagramButton: "VIEW WORK ON INSTAGRAM",
+    factPrivate: "APPOINTMENT ONLY",
+    factAge: "AGES 18+",
+    factHours: "11:00–21:00",
+    scrollLabel: "SCROLL",
+    trust1Title: "First-timers welcome",
+    trust1Text: "Talk to us before your design is finalized.",
+    trust2Title: "Women are welcome",
+    trust2Text: "A private setting where you can speak comfortably.",
+    trust3Title: "Clear pricing first",
+    trust3Text: "Review the details and price before moving forward.",
+    aboutEyebrow: "FOR FIRST VISITORS",
+    aboutTitle: "It is completely normal to have questions.",
+    aboutText1: "A first tattoo can bring questions about design, pain, price and aftercare. You are welcome to contact us even if your idea is not yet complete.",
+    aboutText2: "Send us a reference image, approximate size and placement through LINE. We will explain the information you need clearly, one step at a time, without pressuring you to book.",
+    care1Title: "Start with a consultation",
+    care1Text: "Discuss size, placement, design and budget before deciding to book.",
+    care2Title: "Private setting",
+    care2Text: "Consultations and sessions take place by appointment in a calm environment.",
+    care3Title: "Aftercare guidance",
+    care3Text: "We explain what to do after your session and how to care for your tattoo.",
+    artistAlt: "TAROH, tattoo artist at TAROH TATTOO in Aichi",
+    artistEyebrow: "ABOUT THE ARTIST",
+    artistText1: "Based in Ama City, Aichi, TAROH creates designs for each client with attention to their ideas and the natural flow of the body.",
+    artistText2: "Reference images are welcome, as are fully custom designs created from your concept.",
+    worksTitle: "See the latest work on Instagram",
+    worksText: "View real tattoo photos to get a feel for the finished work and style.",
+    worksButton: "VIEW WORK ↗",
+    flowEyebrow: "BOOKING FLOW",
+    flowTitle: "From consultation to tattoo",
+    flowLead: "Start by sending four simple details through LINE.",
+    flow1Title: "Contact us on LINE",
+    flow1Text: "Send references, approximate size, placement and preferred date.",
+    flow2Title: "Review details and price",
+    flow2Text: "We organize the idea and explain the estimated price and time.",
+    flow3Title: "Choose your date",
+    flow3Text: "Once you are happy with the plan, we confirm your appointment.",
+    flow4Title: "Final check and session",
+    flow4Text: "We check placement and size together before starting.",
+    priceEyebrow: "PRICE GUIDE",
+    priceTitle: "Price guide",
+    priceLead: "Final pricing depends on the design detail, size and placement. We confirm the price before your appointment.",
+    priceNote: "Prices shown are estimates. Contact us through LINE for an exact quote.",
+    priceCoin: "Coin size",
+    priceCard: "Business card size",
+    pricePostcard: "Postcard size",
+    priceA4: "A4 size",
+    priceHourly: "Hourly work",
+    from: "+",
+    faqTitle: "Frequently asked questions",
+    faqLead: "Answers to common questions from first-time clients.",
+    faq1Q: "Can I contact you if my design is not decided?",
+    faq1A: "Yes. Send reference images or a style you like, and we can discuss size and placement together.",
+    faq2Q: "Can women visit alone?",
+    faq2A: "Yes. This is a private, appointment-only studio where you can speak comfortably.",
+    faq3Q: "I am worried about the pain.",
+    faq3A: "Pain varies by person, placement and size. We can also suggest a manageable option for your first tattoo.",
+    faq4Q: "How do I book?",
+    faq4A: "Send a reference image, approximate size, placement and preferred date through LINE. We will review the details and reply.",
+    faq5Q: "Do you tattoo minors?",
+    faq5A: "No. We only tattoo clients aged 18 or older. Please bring photo identification for age verification.",
+    accessEyebrow: "LOCATION",
+    accessTitle: "Shippo, Ama City, Aichi",
+    accessText1: "This is a private, appointment-only studio. The full address is shared once your booking is confirmed.",
+    accessText2: "We welcome consultations from Ama, Tsushima, Oharu, Kanie, western Nagoya and nearby areas.",
+    bookingEyebrow: "BOOKING / CONSULTATION",
+    bookingTitle: "Start with the questions you have.",
+    bookingText: "Your design does not need to be finalized. Feel free to contact us through LINE.",
+    footerLocation: "PRIVATE TATTOO STUDIO · AMA, AICHI",
+    mobileLine: "CONTACT VIA LINE"
+  },
+
+  es: {
+    skipLink: "Ir al contenido",
+    heroEyebrow: "ESTUDIO PRIVADO DE TATUAJES · AMA, AICHI",
+    heroTitle: "¿Quieres tatuarte en Aichi?",
+    heroLead: "Sea tu primer tatuaje o quieras una cita pronto, consulta por LINE sobre diseño, precio y disponibilidad.",
+    lineButton: "CONSULTAR / RESERVAR POR LINE",
+    instagramButton: "VER TRABAJOS EN INSTAGRAM",
+    factPrivate: "SOLO CON CITA",
+    factAge: "MAYORES DE 18",
+    factHours: "11:00–21:00",
+    scrollLabel: "VER MÁS",
+    trust1Title: "Tu primer tatuaje",
+    trust1Text: "Puedes consultar antes de decidir el diseño.",
+    trust2Title: "Mujeres bienvenidas",
+    trust2Text: "Un espacio privado para hablar con tranquilidad.",
+    trust3Title: "Precio antes de empezar",
+    trust3Text: "Revisamos el contenido y el precio antes de continuar.",
+    aboutEyebrow: "PARA TU PRIMERA VISITA",
+    aboutTitle: "Es normal tener preguntas.",
+    aboutText1: "Un primer tatuaje puede generar dudas sobre el diseño, el dolor, el precio y los cuidados. Puedes contactarnos aunque tu idea todavía no esté completamente definida.",
+    aboutText2: "Envíanos por LINE una imagen de referencia, el tamaño aproximado y la zona del cuerpo. Te explicaremos lo necesario paso a paso, sin presionarte para reservar.",
+    care1Title: "Empieza con una consulta",
+    care1Text: "Consulta el tamaño, la zona, el diseño y el presupuesto antes de reservar.",
+    care2Title: "Espacio privado",
+    care2Text: "Las consultas y sesiones se realizan con cita previa en un ambiente tranquilo.",
+    care3Title: "Cuidados posteriores",
+    care3Text: "Después de la sesión te explicamos cómo cuidar el tatuaje.",
+    artistAlt: "TAROH, tatuador de TAROH TATTOO en Aichi",
+    artistEyebrow: "SOBRE EL ARTISTA",
+    artistText1: "Desde Ama, Aichi, TAROH crea diseños adaptados a las ideas de cada persona y al movimiento natural del cuerpo.",
+    artistText2: "Puedes traer imágenes de referencia o pedir un diseño personalizado a partir de tu idea.",
+    worksTitle: "Últimos trabajos en Instagram",
+    worksText: "Mira fotos reales para conocer el acabado y el estilo del trabajo.",
+    worksButton: "VER TRABAJOS ↗",
+    flowEyebrow: "PROCESO DE RESERVA",
+    flowTitle: "De la consulta al tatuaje",
+    flowLead: "Empieza enviando cuatro datos sencillos por LINE.",
+    flow1Title: "Consulta por LINE",
+    flow1Text: "Envía referencias, tamaño, zona del cuerpo y fecha preferida.",
+    flow2Title: "Revisión y precio",
+    flow2Text: "Organizamos la idea y te informamos del precio y tiempo aproximados.",
+    flow3Title: "Elige la fecha",
+    flow3Text: "Cuando estés conforme con el plan, confirmamos la cita.",
+    flow4Title: "Confirmación y sesión",
+    flow4Text: "Comprobamos la ubicación y el tamaño antes de empezar.",
+    priceEyebrow: "PRECIOS ORIENTATIVOS",
+    priceTitle: "Guía de precios",
+    priceLead: "El precio final depende del detalle, el tamaño y la zona. Confirmamos el importe antes de la cita.",
+    priceNote: "Los precios son aproximados. Consulta por LINE para recibir un presupuesto exacto.",
+    priceCoin: "Tamaño moneda",
+    priceCard: "Tamaño tarjeta",
+    pricePostcard: "Tamaño postal",
+    priceA4: "Tamaño A4",
+    priceHourly: "Por hora",
+    from: "+",
+    faqTitle: "Preguntas frecuentes",
+    faqLead: "Respuestas a las preguntas más comunes de quienes se tatúan por primera vez.",
+    faq1Q: "¿Puedo consultar si aún no he decidido el diseño?",
+    faq1A: "Sí. Envía imágenes de referencia o un estilo que te guste y podemos definir juntos el tamaño y la zona.",
+    faq2Q: "¿Puedo ir sola si soy mujer?",
+    faq2A: "Sí. Es un estudio privado que trabaja con cita previa, donde puedes hablar con tranquilidad.",
+    faq3Q: "Me preocupa el dolor.",
+    faq3A: "El dolor varía según la persona, la zona y el tamaño. Para tu primer tatuaje también podemos sugerir una opción manejable.",
+    faq4Q: "¿Cómo puedo reservar?",
+    faq4A: "Envía por LINE una referencia, el tamaño aproximado, la zona y la fecha preferida. Revisaremos los detalles y te responderemos.",
+    faq5Q: "¿Tatúan a menores?",
+    faq5A: "No. Solo atendemos a personas mayores de 18 años. Presenta un documento de identidad con fotografía.",
+    accessEyebrow: "UBICACIÓN",
+    accessTitle: "Shippo, ciudad de Ama, Aichi",
+    accessText1: "Es un estudio privado con cita previa. La dirección completa se comparte al confirmar la reserva.",
+    accessText2: "Atendemos consultas de Ama, Tsushima, Oharu, Kanie, el oeste de Nagoya y zonas cercanas.",
+    bookingEyebrow: "RESERVAS / CONSULTAS",
+    bookingTitle: "Empieza por lo que quieras preguntar.",
+    bookingText: "No necesitas tener el diseño decidido. Escríbenos con confianza por LINE.",
+    footerLocation: "ESTUDIO PRIVADO DE TATUAJES · AMA, AICHI",
+    mobileLine: "CONSULTAR POR LINE"
+  },
+
+  pt: {
+    skipLink: "Ir para o conteúdo",
+    heroEyebrow: "ESTÚDIO PRIVADO DE TATUAGEM · AMA, AICHI",
+    heroTitle: "Quer fazer uma tatuagem em Aichi?",
+    heroLead: "Seja sua primeira tattoo ou se você quiser um horário para breve, consulte desenho, preço e disponibilidade pelo LINE.",
+    lineButton: "CONSULTAR / AGENDAR PELO LINE",
+    instagramButton: "VER TRABALHOS NO INSTAGRAM",
+    factPrivate: "SOMENTE COM HORÁRIO",
+    factAge: "A PARTIR DE 18 ANOS",
+    factHours: "11:00–21:00",
+    scrollLabel: "VER MAIS",
+    trust1Title: "Primeira tatuagem",
+    trust1Text: "Você pode conversar antes de definir o desenho.",
+    trust2Title: "Mulheres são bem-vindas",
+    trust2Text: "Um espaço reservado para conversar com tranquilidade.",
+    trust3Title: "Preço informado antes",
+    trust3Text: "Conferimos o projeto e o valor antes de continuar.",
+    aboutEyebrow: "PARA A PRIMEIRA VISITA",
+    aboutTitle: "É normal ter dúvidas.",
+    aboutText1: "A primeira tatuagem pode trazer dúvidas sobre desenho, dor, preço e cuidados. Você pode entrar em contato mesmo que sua ideia ainda não esteja totalmente definida.",
+    aboutText2: "Envie pelo LINE uma imagem de referência, o tamanho aproximado e o local do corpo. Explicaremos o necessário passo a passo, sem pressionar você a agendar.",
+    care1Title: "Comece com uma consulta",
+    care1Text: "Converse sobre tamanho, local, desenho e orçamento antes de decidir o agendamento.",
+    care2Title: "Espaço reservado",
+    care2Text: "Consultas e sessões são realizadas com horário marcado em um ambiente tranquilo.",
+    care3Title: "Orientação pós-tatuagem",
+    care3Text: "Após a sessão, explicamos como cuidar da sua tatuagem.",
+    artistAlt: "TAROH, tatuador do TAROH TATTOO em Aichi",
+    artistEyebrow: "SOBRE O ARTISTA",
+    artistText1: "Com base em Ama, Aichi, TAROH cria desenhos para cada pessoa, considerando suas ideias e o movimento natural do corpo.",
+    artistText2: "Você pode trazer imagens de referência ou pedir um desenho totalmente personalizado a partir da sua ideia.",
+    worksTitle: "Veja os trabalhos recentes no Instagram",
+    worksText: "Confira fotos reais para conhecer o acabamento e o estilo do trabalho.",
+    worksButton: "VER TRABALHOS ↗",
+    flowEyebrow: "COMO AGENDAR",
+    flowTitle: "Da consulta à tatuagem",
+    flowLead: "Comece enviando quatro informações simples pelo LINE.",
+    flow1Title: "Consulta pelo LINE",
+    flow1Text: "Envie referências, tamanho, local do corpo e data desejada.",
+    flow2Title: "Projeto e orçamento",
+    flow2Text: "Organizamos a ideia e informamos o valor e o tempo aproximados.",
+    flow3Title: "Escolha a data",
+    flow3Text: "Quando você aprovar o plano, confirmamos o horário.",
+    flow4Title: "Conferência e sessão",
+    flow4Text: "Conferimos a posição e o tamanho antes de começar.",
+    priceEyebrow: "VALORES APROXIMADOS",
+    priceTitle: "Guia de preços",
+    priceLead: "O valor final depende dos detalhes, do tamanho e do local. Confirmamos o preço antes do atendimento.",
+    priceNote: "Os preços são aproximados. Entre em contato pelo LINE para receber um orçamento exato.",
+    priceCoin: "Tamanho de moeda",
+    priceCard: "Tamanho de cartão",
+    pricePostcard: "Tamanho de cartão-postal",
+    priceA4: "Tamanho A4",
+    priceHourly: "Por hora",
+    from: "+",
+    faqTitle: "Perguntas frequentes",
+    faqLead: "Respostas às dúvidas mais comuns de quem fará a primeira tatuagem.",
+    faq1Q: "Posso consultar mesmo sem ter definido o desenho?",
+    faq1A: "Sim. Envie imagens de referência ou um estilo de que goste, e podemos definir juntos o tamanho e o local.",
+    faq2Q: "Mulheres podem ir sozinhas?",
+    faq2A: "Sim. O estúdio é privado e funciona com horário marcado, para você conversar com tranquilidade.",
+    faq3Q: "Tenho receio da dor.",
+    faq3A: "A dor varia de pessoa para pessoa e depende do local e do tamanho. Também podemos sugerir uma opção mais tranquila para a primeira tatuagem.",
+    faq4Q: "Como faço para agendar?",
+    faq4A: "Envie pelo LINE uma referência, o tamanho aproximado, o local e a data desejada. Analisaremos os detalhes e responderemos.",
+    faq5Q: "Vocês tatuam menores de idade?",
+    faq5A: "Não. Atendemos apenas pessoas com 18 anos ou mais. Apresente um documento de identificação com foto.",
+    accessEyebrow: "LOCALIZAÇÃO",
+    accessTitle: "Shippo, cidade de Ama, Aichi",
+    accessText1: "Este é um estúdio privado com atendimento agendado. O endereço completo é enviado após a confirmação da reserva.",
+    accessText2: "Recebemos consultas de Ama, Tsushima, Oharu, Kanie, região oeste de Nagoya e áreas próximas.",
+    bookingEyebrow: "AGENDAMENTO / CONSULTA",
+    bookingTitle: "Comece pelas suas dúvidas.",
+    bookingText: "Você não precisa ter o desenho definido. Fale com a gente pelo LINE.",
+    footerLocation: "ESTÚDIO PRIVADO DE TATUAGEM · AMA, AICHI",
+    mobileLine: "CONSULTAR PELO LINE"
+  }
+};
+
+const seo = {
+  ja: {
+    title: "あま市のタトゥースタジオ｜TAROH TATTOO",
+    description: "愛知県あま市七宝町の完全予約制プライベートタトゥースタジオ。初めての方や女性のお客様も、デザイン・料金・施術についてLINEで気軽にご相談いただけます。",
+    ogDescription: "初めての方や女性も相談しやすい、愛知県あま市の完全予約制プライベートスタジオ。",
+    locale: "ja_JP"
+  },
+  en: {
+    title: "Private Tattoo Studio in Ama, Aichi | TAROH TATTOO",
+    description: "Private appointment-only tattoo studio in Shippo, Ama City, Aichi. First-time clients and women are welcome. Contact TAROH TATTOO through LINE.",
+    ogDescription: "A private tattoo studio in Ama, Aichi, welcoming first-time clients and women.",
+    locale: "en_US"
+  },
+  es: {
+    title: "Estudio de tatuajes en Ama, Aichi | TAROH TATTOO",
+    description: "Estudio privado de tatuajes con cita previa en Shippo, Ama, Aichi. Atendemos a personas que se tatúan por primera vez y a mujeres.",
+    ogDescription: "Estudio privado de tatuajes en Ama, Aichi, para primeras experiencias y consultas.",
+    locale: "es_ES"
+  },
+  pt: {
+    title: "Estúdio de tatuagem em Ama, Aichi | TAROH TATTOO",
+    description: "Estúdio privado de tatuagem com atendimento agendado em Shippo, Ama, Aichi. Primeira tatuagem e mulheres são bem-vindas.",
+    ogDescription: "Estúdio privado de tatuagem em Ama, Aichi, com atendimento agendado.",
+    locale: "pt_BR"
+  }
+};
+
+const languageButtons = document.querySelectorAll("[data-lang]");
+const translatableElements = document.querySelectorAll("[data-i18n]");
+const translatableImages = document.querySelectorAll("[data-i18n-alt]");
+
+function updateLanguage(language, savePreference = true) {
+  const copy = translations[language];
+  const meta = seo[language];
+
+  if (!copy || !meta) return;
+
+  document.documentElement.lang = language;
+
+  translatableElements.forEach((element) => {
+    const key = element.dataset.i18n;
+    if (Object.prototype.hasOwnProperty.call(copy, key)) {
+      element.textContent = copy[key];
+    }
+  });
+
+  translatableImages.forEach((image) => {
+    const key = image.dataset.i18nAlt;
+    if (Object.prototype.hasOwnProperty.call(copy, key)) {
+      image.alt = copy[key];
+    }
+  });
+
+  languageButtons.forEach((button) => {
+    const isActive = button.dataset.lang === language;
+    button.classList.toggle("is-active", isActive);
+    button.setAttribute("aria-pressed", String(isActive));
+  });
+
+  document.title = meta.title;
+  document.querySelector("#meta-description").content = meta.description;
+  document.querySelector("#og-title").content = meta.title;
+  document.querySelector("#og-description").content = meta.ogDescription;
+  document.querySelector('meta[property="og:locale"]').content = meta.locale;
+
+  if (savePreference) {
+    try {
+      localStorage.setItem("taroh-language", language);
+    } catch (error) {
+      // The site still works if browser storage is unavailable.
+    }
+  }
+}
+
+languageButtons.forEach((button) => {
+  button.addEventListener("click", () => updateLanguage(button.dataset.lang));
+});
+
+function getInitialLanguage() {
+  try {
+    const saved = localStorage.getItem("taroh-language");
+    if (saved && translations[saved]) return saved;
+  } catch (error) {
+    // Continue with browser language detection.
+  }
+
+  const browserLanguages = navigator.languages || [navigator.language || "ja"];
+  const matchedLanguage = browserLanguages
+    .map((language) => language.toLowerCase().split("-")[0])
+    .find((language) => translations[language]);
+
+  return matchedLanguage || "ja";
+}
+
+const initialLanguage = getInitialLanguage();
+if (initialLanguage !== "ja") {
+  updateLanguage(initialLanguage, false);
+}
+
+  </script>
+</body>
+</html>
